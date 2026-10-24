@@ -1,0 +1,24 @@
+# 环境、凭据与系统文件
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.DS_Store
+# 原扫描、参考资料与生成的校对页不分发
+/pages/
+/refs/
+/index.html
+/editor_p*.html
+/font/variants.html
+# 私人审阅进度、备份、缓存与临时文件
+/edits/yunzhuan_p*_edits.json
+/edits/archive/
+*.bak
+*.tmp
+*.pkl
+*.log
+/_preimport/
+/rv/
+/tmp/

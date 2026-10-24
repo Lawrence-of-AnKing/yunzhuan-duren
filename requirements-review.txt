@@ -1,0 +1,6 @@
+# 仅笔画级页面生成、修订导入和 PNG 导出需要。
+-r requirements.txt
+numpy==2.0.2
+opencv-python-headless==4.10.0.84
+Pillow==11.3.0
+scipy==1.14.1

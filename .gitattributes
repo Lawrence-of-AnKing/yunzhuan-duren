@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.npz binary
+*.ttf binary
+# 分组版本号依据原始字节计算，保留既有换行以兼容已审定选择。
+font/variants.json -text whitespace=cr-at-eol

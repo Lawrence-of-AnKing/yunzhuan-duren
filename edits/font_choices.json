@@ -1,0 +1,5635 @@
+{
+  "build": "b06067481d",
+  "choices": {
+    "无": {
+      "count": 135,
+      "default": "p02r2c04g5",
+      "clusters": [
+        {
+          "rep": "p06r1c04g3",
+          "members": [
+            "p05r3c12g7",
+            "p05r3c17g4",
+            "p06r1c04g3",
+            "p05r3c15g2",
+            "p06r1c02g1",
+            "p06r1c06g5"
+          ]
+        },
+        {
+          "rep": "p02r1c11g6",
+          "members": [
+            "p02r1c11g6",
+            "p02r2c11g4",
+            "p02r1c18g3",
+            "p02r2c18g1",
+            "p02r2c04g7",
+            "p02r2c08g2"
+          ]
+        },
+        {
+          "rep": "p02r2c04g5",
+          "members": [
+            "p02r1c14g6",
+            "p02r2c01g3",
+            "p02r2c04g5",
+            "p02r2c07g7",
+            "p02r2c17g6"
+          ]
+        },
+        {
+          "rep": "p02r2c12g4",
+          "members": [
+            "p02r2c09g2",
+            "p02r2c12g4",
+            "p02r2c15g6",
+            "p02r3c02g3"
+          ]
+        },
+        {
+          "rep": "p02r3c01g1",
+          "members": [
+            "p02r1c18g1",
+            "p02r2c11g2",
+            "p02r2c14g4",
+            "p02r3c01g1"
+          ]
+        },
+        {
+          "rep": "p05r3c09g6",
+          "members": [
+            "p05r3c09g6",
+            "p05r3c12g1",
+            "p06r1c05g6"
+          ]
+        },
+        {
+          "rep": "p08r3c05g4",
+          "members": [
+            "p08r3c05g4",
+            "p12r1c10g2"
+          ]
+        },
+        {
+          "rep": "p05r3c07g4",
+          "members": [
+            "p05r3c07g4",
+            "p07r1c17g4"
+          ]
+        },
+        {
+          "rep": "p07r3c20g1",
+          "members": [
+            "p06r1c08g1",
+            "p07r3c20g1"
+          ]
+        },
+        {
+          "rep": "p01r2c02g7",
+          "members": [
+            "p01r2c02g7",
+            "p11r3c03g5"
+          ]
+        },
+        {
+          "rep": "p06r2c06g4",
+          "members": [
+            "p06r2c06g4",
+            "p08r3c03g3"
+          ]
+        },
+        {
+          "rep": "p02r1c16g1",
+          "members": [
+            "p02r1c16g1",
+            "p02r1c19g3"
+          ]
+        },
+        {
+          "rep": "p05r3c16g5",
+          "members": [
+            "p05r3c16g5",
+            "p06r1c03g4"
+          ]
+        },
+        {
+          "rep": "p01r2c07g1",
+          "members": [
+            "p01r2c07g1",
+            "p01r3c03g3"
+          ]
+        },
+        {
+          "rep": "p05r3c10g5",
+          "members": [
+            "p05r3c10g5",
+            "p05r3c08g3"
+          ]
+        },
+        {
+          "rep": "p02r2c05g7",
+          "members": [
+            "p02r2c05g7",
+            "p02r2c02g5"
+          ]
+        },
+        {
+          "rep": "p10r2c10g6",
+          "members": [
+            "p10r2c10g6"
+          ]
+        },
+        {
+          "rep": "p12r1c07g1",
+          "members": [
+            "p12r1c07g1"
+          ]
+        },
+        {
+          "rep": "p11r2c06g1",
+          "members": [
+            "p11r2c06g1"
+          ]
+        },
+        {
+          "rep": "p05r1c09g6",
+          "members": [
+            "p05r1c09g6"
+          ]
+        },
+        {
+          "rep": "p02r3c04g3",
+          "members": [
+            "p02r3c04g3"
+          ]
+        },
+        {
+          "rep": "p07r3c04g3",
+          "members": [
+            "p07r3c04g3"
+          ]
+        },
+        {
+          "rep": "p03r1c16g6",
+          "members": [
+            "p03r1c16g6"
+          ]
+        },
+        {
+          "rep": "p10r2c20g2",
+          "members": [
+            "p10r2c20g2"
+          ]
+        },
+        {
+          "rep": "p05r2c05g2",
+          "members": [
+            "p05r2c05g2"
+          ]
+        },
+        {
+          "rep": "p05r2c05g6",
+          "members": [
+            "p05r2c05g6"
+          ]
+        },
+        {
+          "rep": "p07r2c09g1",
+          "members": [
+            "p07r2c09g1"
+          ]
+        },
+        {
+          "rep": "p05r2c11g2",
+          "members": [
+            "p05r2c11g2"
+          ]
+        },
+        {
+          "rep": "p03r3c13g1",
+          "members": [
+            "p03r3c13g1"
+          ]
+        },
+        {
+          "rep": "p11r3c09g1",
+          "members": [
+            "p11r3c09g1"
+          ]
+        },
+        {
+          "rep": "p12r3c02g7",
+          "members": [
+            "p12r3c02g7"
+          ]
+        },
+        {
+          "rep": "p08r3c02g6",
+          "members": [
+            "p08r3c02g6"
+          ]
+        },
+        {
+          "rep": "p08r3c06g3",
+          "members": [
+            "p08r3c06g3"
+          ]
+        },
+        {
+          "rep": "p04r1c12g6",
+          "members": [
+            "p04r1c12g6"
+          ]
+        },
+        {
+          "rep": "p09r1c07g6",
+          "members": [
+            "p09r1c07g6"
+          ]
+        },
+        {
+          "rep": "p12r3c02g3",
+          "members": [
+            "p12r3c02g3"
+          ]
+        },
+        {
+          "rep": "p08r3c06g7",
+          "members": [
+            "p08r3c06g7"
+          ]
+        },
+        {
+          "rep": "p01r2c12g2",
+          "members": [
+            "p01r2c12g2"
+          ]
+        },
+        {
+          "rep": "p05r1c20g2",
+          "members": [
+            "p05r1c20g2"
+          ]
+        },
+        {
+          "rep": "p05r1c20g1",
+          "members": [
+            "p05r1c20g1"
+          ]
+        },
+        {
+          "rep": "p04r3c18g5",
+          "members": [
+            "p04r3c18g5"
+          ]
+        },
+        {
+          "rep": "p08r2c18g3",
+          "members": [
+            "p08r2c18g3"
+          ]
+        },
+        {
+          "rep": "p01r2c20g5",
+          "members": [
+            "p01r2c20g5"
+          ]
+        },
+        {
+          "rep": "p06r3c03g1",
+          "members": [
+            "p06r3c03g1"
+          ]
+        },
+        {
+          "rep": "p01r3c04g5",
+          "members": [
+            "p01r3c04g5"
+          ]
+        },
+        {
+          "rep": "p10r1c02g5",
+          "members": [
+            "p10r1c02g5"
+          ]
+        },
+        {
+          "rep": "p11r3c18g3",
+          "members": [
+            "p11r3c18g3"
+          ]
+        },
+        {
+          "rep": "p05r3c06g1",
+          "members": [
+            "p05r3c06g1"
+          ]
+        },
+        {
+          "rep": "p05r1c07g1",
+          "members": [
+            "p05r1c07g1"
+          ]
+        },
+        {
+          "rep": "p08r3c15g4",
+          "members": [
+            "p08r3c15g4"
+          ]
+        },
+        {
+          "rep": "p12r2c12g5",
+          "members": [
+            "p12r2c12g5"
+          ]
+        },
+        {
+          "rep": "p10r2c11g3",
+          "members": [
+            "p10r2c11g3"
+          ]
+        },
+        {
+          "rep": "p05r2c06g7",
+          "members": [
+            "p05r2c06g7"
+          ]
+        },
+        {
+          "rep": "p05r2c08g1",
+          "members": [
+            "p05r2c08g1"
+          ]
+        },
+        {
+          "rep": "p05r2c07g4",
+          "members": [
+            "p05r2c07g4"
+          ]
+        },
+        {
+          "rep": "p06r1c10g3",
+          "members": [
+            "p06r1c10g3"
+          ]
+        },
+        {
+          "rep": "p09r3c05g4",
+          "members": [
+            "p09r3c05g4"
+          ]
+        },
+        {
+          "rep": "p12r1c19g4",
+          "members": [
+            "p12r1c19g4"
+          ]
+        },
+        {
+          "rep": "p08r1c06g5",
+          "members": [
+            "p08r1c06g5"
+          ]
+        },
+        {
+          "rep": "p09r3c20g3",
+          "members": [
+            "p09r3c20g3"
+          ]
+        },
+        {
+          "rep": "p05r3c04g1",
+          "members": [
+            "p05r3c04g1"
+          ]
+        },
+        {
+          "rep": "p10r2c19g5",
+          "members": [
+            "p10r2c19g5"
+          ]
+        },
+        {
+          "rep": "p02r2c19g1",
+          "members": [
+            "p02r2c19g1"
+          ]
+        },
+        {
+          "rep": "p02r3c01g3",
+          "members": [
+            "p02r3c01g3"
+          ]
+        },
+        {
+          "rep": "p03r1c08g6",
+          "members": [
+            "p03r1c08g6"
+          ]
+        },
+        {
+          "rep": "p02r3c16g6",
+          "members": [
+            "p02r3c16g6"
+          ]
+        },
+        {
+          "rep": "p02r1c12g6",
+          "members": [
+            "p02r1c12g6"
+          ]
+        },
+        {
+          "rep": "p10r3c16g1",
+          "members": [
+            "p10r3c16g1"
+          ]
+        },
+        {
+          "rep": "p12r2c13g2",
+          "members": [
+            "p12r2c13g2"
+          ]
+        },
+        {
+          "rep": "p02r2c01g5",
+          "members": [
+            "p02r2c01g5"
+          ]
+        },
+        {
+          "rep": "p02r1c15g1",
+          "members": [
+            "p02r1c15g1"
+          ]
+        },
+        {
+          "rep": "p05r3c19g6",
+          "members": [
+            "p05r3c19g6"
+          ]
+        },
+        {
+          "rep": "p06r3c17g2",
+          "members": [
+            "p06r3c17g2"
+          ]
+        },
+        {
+          "rep": "p05r3c14g3",
+          "members": [
+            "p05r3c14g3"
+          ]
+        },
+        {
+          "rep": "p06r1c01g2",
+          "members": [
+            "p06r1c01g2"
+          ]
+        },
+        {
+          "rep": "p05r3c18g7",
+          "members": [
+            "p05r3c18g7"
+          ]
+        },
+        {
+          "rep": "p10r3c16g7",
+          "members": [
+            "p10r3c16g7"
+          ]
+        },
+        {
+          "rep": "p12r2c12g1",
+          "members": [
+            "p12r2c12g1"
+          ]
+        },
+        {
+          "rep": "p03r1c02g3",
+          "members": [
+            "p03r1c02g3"
+          ]
+        },
+        {
+          "rep": "p04r1c14g2",
+          "members": [
+            "p04r1c14g2"
+          ]
+        },
+        {
+          "rep": "p03r1c16g2",
+          "members": [
+            "p03r1c16g2"
+          ]
+        },
+        {
+          "rep": "p05r2c06g3",
+          "members": [
+            "p05r2c06g3"
+          ]
+        },
+        {
+          "rep": "p11r2c20g1",
+          "members": [
+            "p11r2c20g1"
+          ]
+        },
+        {
+          "rep": "p11r2c15g7",
+          "members": [
+            "p11r2c15g7"
+          ]
+        },
+        {
+          "rep": "p03r1c11g4",
+          "members": [
+            "p03r1c11g4"
+          ]
+        },
+        {
+          "rep": "p05r2c03g1",
+          "members": [
+            "p05r2c03g1"
+          ]
+        },
+        {
+          "rep": "p07r2c13g1",
+          "members": [
+            "p07r2c13g1"
+          ]
+        },
+        {
+          "rep": "p09r1c17g4",
+          "members": [
+            "p09r1c17g4"
+          ]
+        },
+        {
+          "rep": "p02r3c15g7",
+          "members": [
+            "p02r3c15g7"
+          ]
+        },
+        {
+          "rep": "p12r1c16g3",
+          "members": [
+            "p12r1c16g3"
+          ]
+        },
+        {
+          "rep": "p08r3c05g6",
+          "members": [
+            "p08r3c05g6"
+          ]
+        },
+        {
+          "rep": "p08r2c14g6",
+          "members": [
+            "p08r2c14g6"
+          ]
+        },
+        {
+          "rep": "p08r2c15g3",
+          "members": [
+            "p08r2c15g3"
+          ]
+        },
+        {
+          "rep": "p08r3c08g1",
+          "members": [
+            "p08r3c08g1"
+          ]
+        },
+        {
+          "rep": "p08r2c13g2",
+          "members": [
+            "p08r2c13g2"
+          ]
+        },
+        {
+          "rep": "p12r1c04g3",
+          "members": [
+            "p12r1c04g3"
+          ]
+        },
+        {
+          "rep": "p08r1c13g6",
+          "members": [
+            "p08r1c13g6"
+          ]
+        },
+        {
+          "rep": "p12r2c11g4",
+          "members": [
+            "p12r2c11g4"
+          ]
+        },
+        {
+          "rep": "p05r1c14g3",
+          "members": [
+            "p05r1c14g3"
+          ]
+        },
+        {
+          "rep": "p08r3c06g1",
+          "members": [
+            "p08r3c06g1"
+          ]
+        },
+        {
+          "rep": "p02r1c11g4",
+          "members": [
+            "p02r1c11g4"
+          ]
+        },
+        {
+          "rep": "p02r3c08g1",
+          "members": [
+            "p02r3c08g1"
+          ]
+        },
+        {
+          "rep": "p08r3c06g5",
+          "members": [
+            "p08r3c06g5"
+          ]
+        }
+      ]
+    },
+    "之": {
+      "count": 70,
+      "default": "p02r2c09g4",
+      "clusters": [
+        {
+          "rep": "p02r2c09g4",
+          "members": [
+            "p02r1c13g1",
+            "p02r1c16g3",
+            "p02r2c09g4",
+            "p02r2c19g3",
+            "p02r3c02g5"
+          ]
+        },
+        {
+          "rep": "p11r1c01g2",
+          "members": [
+            "p07r3c18g5",
+            "p08r3c02g3",
+            "p11r1c01g2"
+          ]
+        },
+        {
+          "rep": "p02r3c08g3",
+          "members": [
+            "p02r3c08g3",
+            "p07r3c20g3"
+          ]
+        },
+        {
+          "rep": "p04r3c05g5",
+          "members": [
+            "p04r3c05g5",
+            "p10r1c19g3"
+          ]
+        },
+        {
+          "rep": "p09r3c02g7",
+          "members": [
+            "p09r3c02g7",
+            "p10r1c17g2"
+          ]
+        },
+        {
+          "rep": "p04r3c12g1",
+          "members": [
+            "p04r3c12g1",
+            "p07r3c16g3"
+          ]
+        },
+        {
+          "rep": "p03r2c16g5",
+          "members": [
+            "p03r2c16g5",
+            "p10r1c17g6"
+          ]
+        },
+        {
+          "rep": "p04r1c14g4",
+          "members": [
+            "p04r1c14g4",
+            "p10r2c18g4"
+          ]
+        },
+        {
+          "rep": "p04r2c17g7",
+          "members": [
+            "p04r2c17g7",
+            "p10r1c04g4"
+          ]
+        },
+        {
+          "rep": "p12r2c15g1",
+          "members": [
+            "p12r2c15g1"
+          ]
+        },
+        {
+          "rep": "p05r2c17g4",
+          "members": [
+            "p05r2c17g4"
+          ]
+        },
+        {
+          "rep": "p05r2c18g5",
+          "members": [
+            "p05r2c18g5"
+          ]
+        },
+        {
+          "rep": "p03r2c10g2",
+          "members": [
+            "p03r2c10g2"
+          ]
+        },
+        {
+          "rep": "p10r1c20g4",
+          "members": [
+            "p10r1c20g4"
+          ]
+        },
+        {
+          "rep": "p09r2c06g7",
+          "members": [
+            "p09r2c06g7"
+          ]
+        },
+        {
+          "rep": "p10r1c01g5",
+          "members": [
+            "p10r1c01g5"
+          ]
+        },
+        {
+          "rep": "p12r1c02g7",
+          "members": [
+            "p12r1c02g7"
+          ]
+        },
+        {
+          "rep": "p09r2c04g5",
+          "members": [
+            "p09r2c04g5"
+          ]
+        },
+        {
+          "rep": "p03r2c17g1",
+          "members": [
+            "p03r2c17g1"
+          ]
+        },
+        {
+          "rep": "p09r3c10g6",
+          "members": [
+            "p09r3c10g6"
+          ]
+        },
+        {
+          "rep": "p11r2c09g7",
+          "members": [
+            "p11r2c09g7"
+          ]
+        },
+        {
+          "rep": "p04r1c09g3",
+          "members": [
+            "p04r1c09g3"
+          ]
+        },
+        {
+          "rep": "p02r2c02g7",
+          "members": [
+            "p02r2c02g7"
+          ]
+        },
+        {
+          "rep": "p10r3c11g2",
+          "members": [
+            "p10r3c11g2"
+          ]
+        },
+        {
+          "rep": "p02r2c06g2",
+          "members": [
+            "p02r2c06g2"
+          ]
+        },
+        {
+          "rep": "p06r3c03g3",
+          "members": [
+            "p06r3c03g3"
+          ]
+        },
+        {
+          "rep": "p07r3c17g4",
+          "members": [
+            "p07r3c17g4"
+          ]
+        },
+        {
+          "rep": "p10r3c16g3",
+          "members": [
+            "p10r3c16g3"
+          ]
+        },
+        {
+          "rep": "p03r1c03g6",
+          "members": [
+            "p03r1c03g6"
+          ]
+        },
+        {
+          "rep": "p02r3c12g4",
+          "members": [
+            "p02r3c12g4"
+          ]
+        },
+        {
+          "rep": "p03r1c06g1",
+          "members": [
+            "p03r1c06g1"
+          ]
+        },
+        {
+          "rep": "p06r3c02g2",
+          "members": [
+            "p06r3c02g2"
+          ]
+        },
+        {
+          "rep": "p09r2c02g7",
+          "members": [
+            "p09r2c02g7"
+          ]
+        },
+        {
+          "rep": "p02r3c17g7",
+          "members": [
+            "p02r3c17g7"
+          ]
+        },
+        {
+          "rep": "p06r2c07g3",
+          "members": [
+            "p06r2c07g3"
+          ]
+        },
+        {
+          "rep": "p09r1c13g2",
+          "members": [
+            "p09r1c13g2"
+          ]
+        },
+        {
+          "rep": "p05r2c09g4",
+          "members": [
+            "p05r2c09g4"
+          ]
+        },
+        {
+          "rep": "p09r1c12g5",
+          "members": [
+            "p09r1c12g5"
+          ]
+        },
+        {
+          "rep": "p04r1c05g2",
+          "members": [
+            "p04r1c05g2"
+          ]
+        },
+        {
+          "rep": "p12r2c04g1",
+          "members": [
+            "p12r2c04g1"
+          ]
+        },
+        {
+          "rep": "p12r2c14g3",
+          "members": [
+            "p12r2c14g3"
+          ]
+        },
+        {
+          "rep": "p01r3c07g4",
+          "members": [
+            "p01r3c07g4"
+          ]
+        },
+        {
+          "rep": "p04r2c15g7",
+          "members": [
+            "p04r2c15g7"
+          ]
+        },
+        {
+          "rep": "p02r2c12g6",
+          "members": [
+            "p02r2c12g6"
+          ]
+        },
+        {
+          "rep": "p02r2c16g1",
+          "members": [
+            "p02r2c16g1"
+          ]
+        },
+        {
+          "rep": "p10r2c17g5",
+          "members": [
+            "p10r2c17g5"
+          ]
+        },
+        {
+          "rep": "p11r2c14g4",
+          "members": [
+            "p11r2c14g4"
+          ]
+        },
+        {
+          "rep": "p07r3c16g7",
+          "members": [
+            "p07r3c16g7"
+          ]
+        },
+        {
+          "rep": "p08r1c20g5",
+          "members": [
+            "p08r1c20g5"
+          ]
+        },
+        {
+          "rep": "p03r2c07g5",
+          "members": [
+            "p03r2c07g5"
+          ]
+        },
+        {
+          "rep": "p03r3c13g6",
+          "members": [
+            "p03r3c13g6"
+          ]
+        },
+        {
+          "rep": "p02r1c19g5",
+          "members": [
+            "p02r1c19g5"
+          ]
+        },
+        {
+          "rep": "p03r2c05g3",
+          "members": [
+            "p03r2c05g3"
+          ]
+        },
+        {
+          "rep": "p06r1c14g2",
+          "members": [
+            "p06r1c14g2"
+          ]
+        },
+        {
+          "rep": "p03r1c08g3",
+          "members": [
+            "p03r1c08g3"
+          ]
+        },
+        {
+          "rep": "p12r1c19g6",
+          "members": [
+            "p12r1c19g6"
+          ]
+        },
+        {
+          "rep": "p03r2c06g6",
+          "members": [
+            "p03r2c06g6"
+          ]
+        }
+      ]
+    },
+    "度": {
+      "count": 67,
+      "default": "p05r3c10g1",
+      "clusters": [
+        {
+          "rep": "p05r3c10g1",
+          "members": [
+            "p05r3c10g1",
+            "p05r3c19g2",
+            "p06r1c01g4",
+            "p06r1c03g6",
+            "p06r1c06g1",
+            "p06r1c08g3",
+            "p05r3c12g3",
+            "p05r3c14g5",
+            "p05r3c07g6",
+            "p05r3c16g7"
+          ]
+        },
+        {
+          "rep": "p06r2c15g5",
+          "members": [
+            "p06r2c15g5",
+            "p06r3c12g3"
+          ]
+        },
+        {
+          "rep": "p04r1c12g5",
+          "members": [
+            "p04r1c12g5",
+            "p09r3c18g4"
+          ]
+        },
+        {
+          "rep": "p05r2c19g2",
+          "members": [
+            "p05r2c19g2",
+            "p06r1c10g1"
+          ]
+        },
+        {
+          "rep": "p03r3c19g3",
+          "members": [
+            "p03r3c19g3",
+            "p12r1c17g7"
+          ]
+        },
+        {
+          "rep": "p04r1c06g4",
+          "members": [
+            "p04r1c06g4",
+            "p03r1c05g1"
+          ]
+        },
+        {
+          "rep": "p08r3c09g1",
+          "members": [
+            "p08r3c09g1",
+            "p08r1c05g1"
+          ]
+        },
+        {
+          "rep": "p07r3c08g4",
+          "members": [
+            "p07r3c08g4"
+          ]
+        },
+        {
+          "rep": "p09r3c15g1",
+          "members": [
+            "p09r3c15g1"
+          ]
+        },
+        {
+          "rep": "p09r3c08g2",
+          "members": [
+            "p09r3c08g2"
+          ]
+        },
+        {
+          "rep": "p05r1c14g5",
+          "members": [
+            "p05r1c14g5"
+          ]
+        },
+        {
+          "rep": "p03r2c20g1",
+          "members": [
+            "p03r2c20g1"
+          ]
+        },
+        {
+          "rep": "p08r1c03g1",
+          "members": [
+            "p08r1c03g1"
+          ]
+        },
+        {
+          "rep": "p03r3c12g6",
+          "members": [
+            "p03r3c12g6"
+          ]
+        },
+        {
+          "rep": "p09r3c17g4",
+          "members": [
+            "p09r3c17g4"
+          ]
+        },
+        {
+          "rep": "p01r2c06g6",
+          "members": [
+            "p01r2c06g6"
+          ]
+        },
+        {
+          "rep": "p02r1c08g6",
+          "members": [
+            "p02r1c08g6"
+          ]
+        },
+        {
+          "rep": "p05r1c07g3",
+          "members": [
+            "p05r1c07g3"
+          ]
+        },
+        {
+          "rep": "p01r2c03g2",
+          "members": [
+            "p01r2c03g2"
+          ]
+        },
+        {
+          "rep": "p06r2c19g6",
+          "members": [
+            "p06r2c19g6"
+          ]
+        },
+        {
+          "rep": "p03r1c10g6",
+          "members": [
+            "p03r1c10g6"
+          ]
+        },
+        {
+          "rep": "p08r2c04g5",
+          "members": [
+            "p08r2c04g5"
+          ]
+        },
+        {
+          "rep": "p07r2c16g4",
+          "members": [
+            "p07r2c16g4"
+          ]
+        },
+        {
+          "rep": "p03r2c02g1",
+          "members": [
+            "p03r2c02g1"
+          ]
+        },
+        {
+          "rep": "p11r1c12g7",
+          "members": [
+            "p11r1c12g7"
+          ]
+        },
+        {
+          "rep": "p11r1c10g5",
+          "members": [
+            "p11r1c10g5"
+          ]
+        },
+        {
+          "rep": "p12r2c13g1",
+          "members": [
+            "p12r2c13g1"
+          ]
+        },
+        {
+          "rep": "p09r1c20g6",
+          "members": [
+            "p09r1c20g6"
+          ]
+        },
+        {
+          "rep": "p11r2c04g2",
+          "members": [
+            "p11r2c04g2"
+          ]
+        },
+        {
+          "rep": "p05r2c16g7",
+          "members": [
+            "p05r2c16g7"
+          ]
+        },
+        {
+          "rep": "p06r2c17g6",
+          "members": [
+            "p06r2c17g6"
+          ]
+        },
+        {
+          "rep": "p05r3c02g7",
+          "members": [
+            "p05r3c02g7"
+          ]
+        },
+        {
+          "rep": "p08r3c17g1",
+          "members": [
+            "p08r3c17g1"
+          ]
+        },
+        {
+          "rep": "p11r2c06g4",
+          "members": [
+            "p11r2c06g4"
+          ]
+        },
+        {
+          "rep": "p09r1c17g6",
+          "members": [
+            "p09r1c17g6"
+          ]
+        },
+        {
+          "rep": "p05r3c04g3",
+          "members": [
+            "p05r3c04g3"
+          ]
+        },
+        {
+          "rep": "p06r2c01g1",
+          "members": [
+            "p06r2c01g1"
+          ]
+        },
+        {
+          "rep": "p10r1c19g7",
+          "members": [
+            "p10r1c19g7"
+          ]
+        },
+        {
+          "rep": "p11r1c03g3",
+          "members": [
+            "p11r1c03g3"
+          ]
+        },
+        {
+          "rep": "p10r2c11g2",
+          "members": [
+            "p10r2c11g2"
+          ]
+        },
+        {
+          "rep": "p12r1c08g7",
+          "members": [
+            "p12r1c08g7"
+          ]
+        },
+        {
+          "rep": "p05r2c07g7",
+          "members": [
+            "p05r2c07g7"
+          ]
+        },
+        {
+          "rep": "p10r2c03g6",
+          "members": [
+            "p10r2c03g6"
+          ]
+        },
+        {
+          "rep": "p04r2c05g6",
+          "members": [
+            "p04r2c05g6"
+          ]
+        },
+        {
+          "rep": "p08r1c01g7",
+          "members": [
+            "p08r1c01g7"
+          ]
+        },
+        {
+          "rep": "p10r2c09g4",
+          "members": [
+            "p10r2c09g4"
+          ]
+        },
+        {
+          "rep": "p10r3c07g7",
+          "members": [
+            "p10r3c07g7"
+          ]
+        },
+        {
+          "rep": "p10r3c16g6",
+          "members": [
+            "p10r3c16g6"
+          ]
+        },
+        {
+          "rep": "p06r2c05g2",
+          "members": [
+            "p06r2c05g2"
+          ]
+        },
+        {
+          "rep": "p09r3c11g3",
+          "members": [
+            "p09r3c11g3"
+          ]
+        },
+        {
+          "rep": "p05r1c18g1",
+          "members": [
+            "p05r1c18g1"
+          ]
+        },
+        {
+          "rep": "p10r3c20g2",
+          "members": [
+            "p10r3c20g2"
+          ]
+        }
+      ]
+    },
+    "神": {
+      "count": 60,
+      "default": "p05r3c08g7",
+      "clusters": [
+        {
+          "rep": "p03r3c11g1",
+          "members": [
+            "p02r2c18g7",
+            "p03r3c11g1",
+            "p05r2c19g7",
+            "p02r2c02g4",
+            "p02r3c05g1",
+            "p02r2c09g1",
+            "p09r1c08g6"
+          ]
+        },
+        {
+          "rep": "p09r1c07g1",
+          "members": [
+            "p09r1c07g1",
+            "p04r2c01g7",
+            "p08r2c18g6",
+            "p02r1c12g5"
+          ]
+        },
+        {
+          "rep": "p05r3c08g7",
+          "members": [
+            "p05r3c08g7",
+            "p05r3c11g2",
+            "p05r3c18g1"
+          ]
+        },
+        {
+          "rep": "p05r3c06g5",
+          "members": [
+            "p05r3c06g5",
+            "p06r1c02g5"
+          ]
+        },
+        {
+          "rep": "p07r3c17g5",
+          "members": [
+            "p07r3c17g5",
+            "p04r1c09g6"
+          ]
+        },
+        {
+          "rep": "p09r1c15g5",
+          "members": [
+            "p09r1c15g5"
+          ]
+        },
+        {
+          "rep": "p04r1c03g3",
+          "members": [
+            "p04r1c03g3"
+          ]
+        },
+        {
+          "rep": "p08r1c20g4",
+          "members": [
+            "p08r1c20g4"
+          ]
+        },
+        {
+          "rep": "p02r3c02g2",
+          "members": [
+            "p02r3c02g2"
+          ]
+        },
+        {
+          "rep": "p12r2c07g3",
+          "members": [
+            "p12r2c07g3"
+          ]
+        },
+        {
+          "rep": "p02r2c05g6",
+          "members": [
+            "p02r2c05g6"
+          ]
+        },
+        {
+          "rep": "p04r2c18g7",
+          "members": [
+            "p04r2c18g7"
+          ]
+        },
+        {
+          "rep": "p11r1c07g2",
+          "members": [
+            "p11r1c07g2"
+          ]
+        },
+        {
+          "rep": "p02r1c15g7",
+          "members": [
+            "p02r1c15g7"
+          ]
+        },
+        {
+          "rep": "p04r2c07g6",
+          "members": [
+            "p04r2c07g6"
+          ]
+        },
+        {
+          "rep": "p01r2c19g3",
+          "members": [
+            "p01r2c19g3"
+          ]
+        },
+        {
+          "rep": "p06r2c06g6",
+          "members": [
+            "p06r2c06g6"
+          ]
+        },
+        {
+          "rep": "p09r3c05g7",
+          "members": [
+            "p09r3c05g7"
+          ]
+        },
+        {
+          "rep": "p02r1c19g2",
+          "members": [
+            "p02r1c19g2"
+          ]
+        },
+        {
+          "rep": "p05r3c03g3",
+          "members": [
+            "p05r3c03g3"
+          ]
+        },
+        {
+          "rep": "p05r2c17g5",
+          "members": [
+            "p05r2c17g5"
+          ]
+        },
+        {
+          "rep": "p06r2c03g4",
+          "members": [
+            "p06r2c03g4"
+          ]
+        },
+        {
+          "rep": "p01r2c10g7",
+          "members": [
+            "p01r2c10g7"
+          ]
+        },
+        {
+          "rep": "p08r2c05g4",
+          "members": [
+            "p08r2c05g4"
+          ]
+        },
+        {
+          "rep": "p11r1c04g2",
+          "members": [
+            "p11r1c04g2"
+          ]
+        },
+        {
+          "rep": "p11r2c12g4",
+          "members": [
+            "p11r2c12g4"
+          ]
+        },
+        {
+          "rep": "p02r3c14g3",
+          "members": [
+            "p02r3c14g3"
+          ]
+        },
+        {
+          "rep": "p02r3c16g5",
+          "members": [
+            "p02r3c16g5"
+          ]
+        },
+        {
+          "rep": "p05r3c20g3",
+          "members": [
+            "p05r3c20g3"
+          ]
+        },
+        {
+          "rep": "p11r3c19g5",
+          "members": [
+            "p11r3c19g5"
+          ]
+        },
+        {
+          "rep": "p08r1c13g5",
+          "members": [
+            "p08r1c13g5"
+          ]
+        },
+        {
+          "rep": "p05r3c15g6",
+          "members": [
+            "p05r3c15g6"
+          ]
+        },
+        {
+          "rep": "p06r1c10g6",
+          "members": [
+            "p06r1c10g6"
+          ]
+        },
+        {
+          "rep": "p05r3c13g4",
+          "members": [
+            "p05r3c13g4"
+          ]
+        },
+        {
+          "rep": "p07r3c05g5",
+          "members": [
+            "p07r3c05g5"
+          ]
+        },
+        {
+          "rep": "p06r1c04g7",
+          "members": [
+            "p06r1c04g7"
+          ]
+        },
+        {
+          "rep": "p06r1c09g4",
+          "members": [
+            "p06r1c09g4"
+          ]
+        },
+        {
+          "rep": "p10r3c10g1",
+          "members": [
+            "p10r3c10g1"
+          ]
+        },
+        {
+          "rep": "p12r1c07g8",
+          "members": [
+            "p12r1c07g8"
+          ]
+        },
+        {
+          "rep": "p06r1c07g2",
+          "members": [
+            "p06r1c07g2"
+          ]
+        },
+        {
+          "rep": "p12r2c16g5",
+          "members": [
+            "p12r2c16g5"
+          ]
+        },
+        {
+          "rep": "p02r2c12g3",
+          "members": [
+            "p02r2c12g3"
+          ]
+        },
+        {
+          "rep": "p02r2c15g5",
+          "members": [
+            "p02r2c15g5"
+          ]
+        },
+        {
+          "rep": "p04r3c02g3",
+          "members": [
+            "p04r3c02g3"
+          ]
+        },
+        {
+          "rep": "p08r1c01g4",
+          "members": [
+            "p08r1c01g4"
+          ]
+        },
+        {
+          "rep": "p05r2c04g7",
+          "members": [
+            "p05r2c04g7"
+          ]
+        },
+        {
+          "rep": "p12r2c05g2",
+          "members": [
+            "p12r2c05g2"
+          ]
+        }
+      ]
+    },
+    "人": {
+      "count": 57,
+      "default": "p05r3c14g6",
+      "clusters": [
+        {
+          "rep": "p05r3c14g6",
+          "members": [
+            "p05r3c14g6",
+            "p06r1c03g7",
+            "p06r1c06g2",
+            "p05r3c07g7",
+            "p05r3c17g1",
+            "p06r1c01g5",
+            "p06r2c17g2",
+            "p08r1c02g2",
+            "p02r3c15g4"
+          ]
+        },
+        {
+          "rep": "p04r1c01g5",
+          "members": [
+            "p04r1c01g5",
+            "p04r2c01g4",
+            "p03r1c09g5",
+            "p05r3c12g4"
+          ]
+        },
+        {
+          "rep": "p05r3c19g3",
+          "members": [
+            "p05r3c19g3",
+            "p06r1c08g4",
+            "p12r2c01g5"
+          ]
+        },
+        {
+          "rep": "p09r2c17g7",
+          "members": [
+            "p09r2c17g7",
+            "p12r1c17g8"
+          ]
+        },
+        {
+          "rep": "p04r2c17g4",
+          "members": [
+            "p04r2c17g4",
+            "p09r2c17g3"
+          ]
+        },
+        {
+          "rep": "p09r2c16g6",
+          "members": [
+            "p09r2c16g6",
+            "p09r3c17g7"
+          ]
+        },
+        {
+          "rep": "p10r1c13g3",
+          "members": [
+            "p09r1c17g7",
+            "p10r1c13g3"
+          ]
+        },
+        {
+          "rep": "p11r2c13g3",
+          "members": [
+            "p05r1c07g4",
+            "p11r2c13g3"
+          ]
+        },
+        {
+          "rep": "p03r1c01g3",
+          "members": [
+            "p03r1c01g3"
+          ]
+        },
+        {
+          "rep": "p11r2c15g2",
+          "members": [
+            "p11r2c15g2"
+          ]
+        },
+        {
+          "rep": "p05r2c17g1",
+          "members": [
+            "p05r2c17g1"
+          ]
+        },
+        {
+          "rep": "p10r3c04g1",
+          "members": [
+            "p10r3c04g1"
+          ]
+        },
+        {
+          "rep": "p05r1c04g5",
+          "members": [
+            "p05r1c04g5"
+          ]
+        },
+        {
+          "rep": "p05r1c18g2",
+          "members": [
+            "p05r1c18g2"
+          ]
+        },
+        {
+          "rep": "p01r2c12g1",
+          "members": [
+            "p01r2c12g1"
+          ]
+        },
+        {
+          "rep": "p08r2c04g6",
+          "members": [
+            "p08r2c04g6"
+          ]
+        },
+        {
+          "rep": "p02r3c18g3",
+          "members": [
+            "p02r3c18g3"
+          ]
+        },
+        {
+          "rep": "p01r2c03g3",
+          "members": [
+            "p01r2c03g3"
+          ]
+        },
+        {
+          "rep": "p11r1c01g7",
+          "members": [
+            "p11r1c01g7"
+          ]
+        },
+        {
+          "rep": "p02r1c01g1",
+          "members": [
+            "p02r1c01g1"
+          ]
+        },
+        {
+          "rep": "p09r2c14g4",
+          "members": [
+            "p09r2c14g4"
+          ]
+        },
+        {
+          "rep": "p09r1c13g6",
+          "members": [
+            "p09r1c13g6"
+          ]
+        },
+        {
+          "rep": "p09r2c09g1",
+          "members": [
+            "p09r2c09g1"
+          ]
+        },
+        {
+          "rep": "p01r2c06g7",
+          "members": [
+            "p01r2c06g7"
+          ]
+        },
+        {
+          "rep": "p04r1c07g3",
+          "members": [
+            "p04r1c07g3"
+          ]
+        },
+        {
+          "rep": "p05r1c14g6",
+          "members": [
+            "p05r1c14g6"
+          ]
+        },
+        {
+          "rep": "p10r1c11g5",
+          "members": [
+            "p10r1c11g5"
+          ]
+        },
+        {
+          "rep": "p04r1c13g4",
+          "members": [
+            "p04r1c13g4"
+          ]
+        },
+        {
+          "rep": "p05r3c04g4",
+          "members": [
+            "p05r3c04g4"
+          ]
+        },
+        {
+          "rep": "p03r3c12g7",
+          "members": [
+            "p03r3c12g7"
+          ]
+        },
+        {
+          "rep": "p03r2c08g6",
+          "members": [
+            "p03r2c08g6"
+          ]
+        },
+        {
+          "rep": "p10r3c10g2",
+          "members": [
+            "p10r3c10g2"
+          ]
+        },
+        {
+          "rep": "p03r2c16g2",
+          "members": [
+            "p03r2c16g2"
+          ]
+        },
+        {
+          "rep": "p05r3c10g2",
+          "members": [
+            "p05r3c10g2"
+          ]
+        },
+        {
+          "rep": "p02r1c06g4",
+          "members": [
+            "p02r1c06g4"
+          ]
+        },
+        {
+          "rep": "p09r2c07g2",
+          "members": [
+            "p09r2c07g2"
+          ]
+        },
+        {
+          "rep": "p05r3c01g1",
+          "members": [
+            "p05r3c01g1"
+          ]
+        },
+        {
+          "rep": "p11r2c06g6",
+          "members": [
+            "p11r2c06g6"
+          ]
+        },
+        {
+          "rep": "p04r2c14g2",
+          "members": [
+            "p04r2c14g2"
+          ]
+        }
+      ]
+    },
+    "经": {
+      "count": 56,
+      "default": "p02r2c03g7",
+      "clusters": [
+        {
+          "rep": "p02r2c03g7",
+          "members": [
+            "p02r2c03g7",
+            "p02r2c07g2",
+            "p02r2c10g4",
+            "p02r1c17g3",
+            "p02r2c20g3"
+          ]
+        },
+        {
+          "rep": "p02r1c20g5",
+          "members": [
+            "p02r1c20g5",
+            "p02r2c17g1",
+            "p02r2c13g6",
+            "p02r1c14g1",
+            "p02r1c10g6"
+          ]
+        },
+        {
+          "rep": "p01r3c20g4",
+          "members": [
+            "p01r3c20g4"
+          ]
+        },
+        {
+          "rep": "p04r2c20g1",
+          "members": [
+            "p04r2c20g1"
+          ]
+        },
+        {
+          "rep": "p03r1c04g2",
+          "members": [
+            "p03r1c04g2"
+          ]
+        },
+        {
+          "rep": "p04r2c16g5",
+          "members": [
+            "p04r2c16g5"
+          ]
+        },
+        {
+          "rep": "p04r1c10g3",
+          "members": [
+            "p04r1c10g3"
+          ]
+        },
+        {
+          "rep": "p11r1c20g7",
+          "members": [
+            "p11r1c20g7"
+          ]
+        },
+        {
+          "rep": "p11r1c16g7",
+          "members": [
+            "p11r1c16g7"
+          ]
+        },
+        {
+          "rep": "p04r1c02g3",
+          "members": [
+            "p04r1c02g3"
+          ]
+        },
+        {
+          "rep": "p11r1c14g5",
+          "members": [
+            "p11r1c14g5"
+          ]
+        },
+        {
+          "rep": "p04r2c07g3",
+          "members": [
+            "p04r2c07g3"
+          ]
+        },
+        {
+          "rep": "p05r1c13g2",
+          "members": [
+            "p05r1c13g2"
+          ]
+        },
+        {
+          "rep": "p03r3c11g6",
+          "members": [
+            "p03r3c11g6"
+          ]
+        },
+        {
+          "rep": "p01r3c17g1",
+          "members": [
+            "p01r3c17g1"
+          ]
+        },
+        {
+          "rep": "p04r2c10g6",
+          "members": [
+            "p04r2c10g6"
+          ]
+        },
+        {
+          "rep": "p01r3c13g5",
+          "members": [
+            "p01r3c13g5"
+          ]
+        },
+        {
+          "rep": "p04r1c12g1",
+          "members": [
+            "p04r1c12g1"
+          ]
+        },
+        {
+          "rep": "p03r3c16g6",
+          "members": [
+            "p03r3c16g6"
+          ]
+        },
+        {
+          "rep": "p04r2c02g5",
+          "members": [
+            "p04r2c02g5"
+          ]
+        },
+        {
+          "rep": "p01r3c12g4",
+          "members": [
+            "p01r3c12g4"
+          ]
+        },
+        {
+          "rep": "p10r3c20g4",
+          "members": [
+            "p10r3c20g4"
+          ]
+        },
+        {
+          "rep": "p11r2c07g6",
+          "members": [
+            "p11r2c07g6"
+          ]
+        },
+        {
+          "rep": "p11r1c02g6",
+          "members": [
+            "p11r1c02g6"
+          ]
+        },
+        {
+          "rep": "p01r3c18g6",
+          "members": [
+            "p01r3c18g6"
+          ]
+        },
+        {
+          "rep": "p02r1c03g3",
+          "members": [
+            "p02r1c03g3"
+          ]
+        },
+        {
+          "rep": "p11r1c19g2",
+          "members": [
+            "p11r1c19g2"
+          ]
+        },
+        {
+          "rep": "p11r2c11g2",
+          "members": [
+            "p11r2c11g2"
+          ]
+        },
+        {
+          "rep": "p10r3c14g6",
+          "members": [
+            "p10r3c14g6"
+          ]
+        },
+        {
+          "rep": "p11r1c12g3",
+          "members": [
+            "p11r1c12g3"
+          ]
+        },
+        {
+          "rep": "p01r3c15g3",
+          "members": [
+            "p01r3c15g3"
+          ]
+        },
+        {
+          "rep": "p05r1c15g3",
+          "members": [
+            "p05r1c15g3"
+          ]
+        },
+        {
+          "rep": "p04r1c05g7",
+          "members": [
+            "p04r1c05g7"
+          ]
+        },
+        {
+          "rep": "p01r3c07g7",
+          "members": [
+            "p01r3c07g7"
+          ]
+        },
+        {
+          "rep": "p04r2c04g3",
+          "members": [
+            "p04r2c04g3"
+          ]
+        },
+        {
+          "rep": "p03r1c19g4",
+          "members": [
+            "p03r1c19g4"
+          ]
+        },
+        {
+          "rep": "p05r1c06g7",
+          "members": [
+            "p05r1c06g7"
+          ]
+        },
+        {
+          "rep": "p04r2c18g5",
+          "members": [
+            "p04r2c18g5"
+          ]
+        },
+        {
+          "rep": "p11r2c01g5",
+          "members": [
+            "p11r2c01g5"
+          ]
+        },
+        {
+          "rep": "p11r1c10g1",
+          "members": [
+            "p11r1c10g1"
+          ]
+        },
+        {
+          "rep": "p01r3c11g3",
+          "members": [
+            "p01r3c11g3"
+          ]
+        },
+        {
+          "rep": "p05r1c08g3",
+          "members": [
+            "p05r1c08g3"
+          ]
+        },
+        {
+          "rep": "p01r2c03g7",
+          "members": [
+            "p01r2c03g7"
+          ]
+        },
+        {
+          "rep": "p01r2c08g5",
+          "members": [
+            "p01r2c08g5"
+          ]
+        },
+        {
+          "rep": "p04r1c19g7",
+          "members": [
+            "p04r1c19g7"
+          ]
+        },
+        {
+          "rep": "p03r1c10g1",
+          "members": [
+            "p03r1c10g1"
+          ]
+        },
+        {
+          "rep": "p03r2c03g3",
+          "members": [
+            "p03r2c03g3"
+          ]
+        },
+        {
+          "rep": "p02r1c05g1",
+          "members": [
+            "p02r1c05g1"
+          ]
+        }
+      ]
+    },
+    "帝": {
+      "count": 55,
+      "default": "p06r3c18g1",
+      "clusters": [
+        {
+          "rep": "p06r3c18g1",
+          "members": [
+            "p06r3c08g1",
+            "p06r3c10g1",
+            "p06r3c12g1",
+            "p06r3c14g1",
+            "p06r3c16g1",
+            "p06r3c18g1"
+          ]
+        },
+        {
+          "rep": "p07r2c19g1",
+          "members": [
+            "p07r2c19g1",
+            "p07r3c03g1",
+            "p07r3c05g1",
+            "p07r3c07g1",
+            "p07r3c09g1",
+            "p07r3c11g1"
+          ]
+        },
+        {
+          "rep": "p07r1c17g1",
+          "members": [
+            "p07r1c17g1",
+            "p07r1c09g1",
+            "p07r1c05g1",
+            "p07r1c07g1"
+          ]
+        },
+        {
+          "rep": "p07r2c04g1",
+          "members": [
+            "p07r1c20g1",
+            "p07r2c04g1",
+            "p07r2c08g1"
+          ]
+        },
+        {
+          "rep": "p08r2c19g5",
+          "members": [
+            "p08r2c19g5",
+            "p12r2c16g1"
+          ]
+        },
+        {
+          "rep": "p04r3c01g6",
+          "members": [
+            "p04r3c01g6",
+            "p08r1c10g6"
+          ]
+        },
+        {
+          "rep": "p06r3c06g1",
+          "members": [
+            "p06r3c06g1",
+            "p06r3c20g1"
+          ]
+        },
+        {
+          "rep": "p07r2c10g1",
+          "members": [
+            "p07r2c10g1",
+            "p07r2c12g1"
+          ]
+        },
+        {
+          "rep": "p07r1c03g1",
+          "members": [
+            "p07r1c03g1",
+            "p07r1c15g1"
+          ]
+        },
+        {
+          "rep": "p03r2c04g5",
+          "members": [
+            "p03r2c04g5"
+          ]
+        },
+        {
+          "rep": "p08r1c19g7",
+          "members": [
+            "p08r1c19g7"
+          ]
+        },
+        {
+          "rep": "p05r1c03g1",
+          "members": [
+            "p05r1c03g1"
+          ]
+        },
+        {
+          "rep": "p07r3c13g1",
+          "members": [
+            "p07r3c13g1"
+          ]
+        },
+        {
+          "rep": "p03r2c17g6",
+          "members": [
+            "p03r2c17g6"
+          ]
+        },
+        {
+          "rep": "p06r3c02g5",
+          "members": [
+            "p06r3c02g5"
+          ]
+        },
+        {
+          "rep": "p07r2c06g1",
+          "members": [
+            "p07r2c06g1"
+          ]
+        },
+        {
+          "rep": "p08r3c20g4",
+          "members": [
+            "p08r3c20g4"
+          ]
+        },
+        {
+          "rep": "p11r2c03g2",
+          "members": [
+            "p11r2c03g2"
+          ]
+        },
+        {
+          "rep": "p08r1c11g7",
+          "members": [
+            "p08r1c11g7"
+          ]
+        },
+        {
+          "rep": "p08r1c12g4",
+          "members": [
+            "p08r1c12g4"
+          ]
+        },
+        {
+          "rep": "p08r1c13g1",
+          "members": [
+            "p08r1c13g1"
+          ]
+        },
+        {
+          "rep": "p07r2c14g1",
+          "members": [
+            "p07r2c14g1"
+          ]
+        },
+        {
+          "rep": "p08r1c11g3",
+          "members": [
+            "p08r1c11g3"
+          ]
+        },
+        {
+          "rep": "p07r2c17g1",
+          "members": [
+            "p07r2c17g1"
+          ]
+        },
+        {
+          "rep": "p04r2c11g3",
+          "members": [
+            "p04r2c11g3"
+          ]
+        },
+        {
+          "rep": "p07r2c02g1",
+          "members": [
+            "p07r2c02g1"
+          ]
+        },
+        {
+          "rep": "p05r1c11g1",
+          "members": [
+            "p05r1c11g1"
+          ]
+        },
+        {
+          "rep": "p11r2c08g4",
+          "members": [
+            "p11r2c08g4"
+          ]
+        },
+        {
+          "rep": "p07r1c13g1",
+          "members": [
+            "p07r1c13g1"
+          ]
+        },
+        {
+          "rep": "p10r2c16g4",
+          "members": [
+            "p10r2c16g4"
+          ]
+        },
+        {
+          "rep": "p06r2c04g4",
+          "members": [
+            "p06r2c04g4"
+          ]
+        },
+        {
+          "rep": "p07r1c11g1",
+          "members": [
+            "p07r1c11g1"
+          ]
+        },
+        {
+          "rep": "p04r1c20g2",
+          "members": [
+            "p04r1c20g2"
+          ]
+        },
+        {
+          "rep": "p07r3c01g1",
+          "members": [
+            "p07r3c01g1"
+          ]
+        },
+        {
+          "rep": "p03r2c11g3",
+          "members": [
+            "p03r2c11g3"
+          ]
+        }
+      ]
+    },
+    "大": {
+      "count": 52,
+      "default": "p02r2c18g6",
+      "clusters": [
+        {
+          "rep": "p05r3c09g4",
+          "members": [
+            "p05r3c09g4",
+            "p05r3c18g5",
+            "p05r3c07g2",
+            "p06r1c03g2",
+            "p06r1c05g4",
+            "p06r1c07g6"
+          ]
+        },
+        {
+          "rep": "p02r1c19g1",
+          "members": [
+            "p02r1c19g1",
+            "p02r2c15g4",
+            "p02r2c05g5",
+            "p02r2c12g2"
+          ]
+        },
+        {
+          "rep": "p02r2c18g6",
+          "members": [
+            "p02r2c08g7",
+            "p02r2c18g6",
+            "p02r3c02g1"
+          ]
+        },
+        {
+          "rep": "p02r3c11g4",
+          "members": [
+            "p02r3c11g4",
+            "p05r3c20g7"
+          ]
+        },
+        {
+          "rep": "p05r3c14g1",
+          "members": [
+            "p05r3c14g1",
+            "p05r3c16g3"
+          ]
+        },
+        {
+          "rep": "p03r3c14g3",
+          "members": [
+            "p03r3c14g3",
+            "p09r1c07g4"
+          ]
+        },
+        {
+          "rep": "p07r3c11g2",
+          "members": [
+            "p07r3c11g2",
+            "p08r1c20g1"
+          ]
+        },
+        {
+          "rep": "p12r3c03g7",
+          "members": [
+            "p12r3c03g7",
+            "p01r2c10g6"
+          ]
+        },
+        {
+          "rep": "p05r3c11g6",
+          "members": [
+            "p05r3c11g6"
+          ]
+        },
+        {
+          "rep": "p08r1c09g6",
+          "members": [
+            "p08r1c09g6"
+          ]
+        },
+        {
+          "rep": "p09r3c05g6",
+          "members": [
+            "p09r3c05g6"
+          ]
+        },
+        {
+          "rep": "p02r1c15g6",
+          "members": [
+            "p02r1c15g6"
+          ]
+        },
+        {
+          "rep": "p02r3c04g7",
+          "members": [
+            "p02r3c04g7"
+          ]
+        },
+        {
+          "rep": "p05r2c15g4",
+          "members": [
+            "p05r2c15g4"
+          ]
+        },
+        {
+          "rep": "p06r1c10g5",
+          "members": [
+            "p06r1c10g5"
+          ]
+        },
+        {
+          "rep": "p01r3c08g5",
+          "members": [
+            "p01r3c08g5"
+          ]
+        },
+        {
+          "rep": "p12r1c13g3",
+          "members": [
+            "p12r1c13g3"
+          ]
+        },
+        {
+          "rep": "p02r3c16g4",
+          "members": [
+            "p02r3c16g4"
+          ]
+        },
+        {
+          "rep": "p07r3c18g1",
+          "members": [
+            "p07r3c18g1"
+          ]
+        },
+        {
+          "rep": "p08r3c07g4",
+          "members": [
+            "p08r3c07g4"
+          ]
+        },
+        {
+          "rep": "p12r1c18g7",
+          "members": [
+            "p12r1c18g7"
+          ]
+        },
+        {
+          "rep": "p10r2c18g2",
+          "members": [
+            "p10r2c18g2"
+          ]
+        },
+        {
+          "rep": "p08r2c08g3",
+          "members": [
+            "p08r2c08g3"
+          ]
+        },
+        {
+          "rep": "p11r3c14g7",
+          "members": [
+            "p11r3c14g7"
+          ]
+        },
+        {
+          "rep": "p06r2c03g3",
+          "members": [
+            "p06r2c03g3"
+          ]
+        },
+        {
+          "rep": "p02r1c12g4",
+          "members": [
+            "p02r1c12g4"
+          ]
+        },
+        {
+          "rep": "p02r2c02g3",
+          "members": [
+            "p02r2c02g3"
+          ]
+        },
+        {
+          "rep": "p11r2c19g4",
+          "members": [
+            "p11r2c19g4"
+          ]
+        },
+        {
+          "rep": "p11r3c07g3",
+          "members": [
+            "p11r3c07g3"
+          ]
+        },
+        {
+          "rep": "p10r1c02g2",
+          "members": [
+            "p10r1c02g2"
+          ]
+        },
+        {
+          "rep": "p05r2c11g4",
+          "members": [
+            "p05r2c11g4"
+          ]
+        },
+        {
+          "rep": "p05r2c13g6",
+          "members": [
+            "p05r2c13g6"
+          ]
+        },
+        {
+          "rep": "p05r2c19g6",
+          "members": [
+            "p05r2c19g6"
+          ]
+        },
+        {
+          "rep": "p02r3c14g2",
+          "members": [
+            "p02r3c14g2"
+          ]
+        },
+        {
+          "rep": "p12r2c08g3",
+          "members": [
+            "p12r2c08g3"
+          ]
+        },
+        {
+          "rep": "p05r2c08g7",
+          "members": [
+            "p05r2c08g7"
+          ]
+        },
+        {
+          "rep": "p01r2c05g6",
+          "members": [
+            "p01r2c05g6"
+          ]
+        }
+      ]
+    },
+    "生": {
+      "count": 46,
+      "default": "p07r2c19g5",
+      "clusters": [
+        {
+          "rep": "p05r3c09g3",
+          "members": [
+            "p05r3c09g3",
+            "p06r1c07g5",
+            "p05r3c13g7",
+            "p05r3c16g2",
+            "p05r3c07g1",
+            "p06r1c05g3",
+            "p05r3c18g4",
+            "p05r3c20g6"
+          ]
+        },
+        {
+          "rep": "p07r2c19g5",
+          "members": [
+            "p07r2c19g5",
+            "p10r2c10g3"
+          ]
+        },
+        {
+          "rep": "p09r1c07g3",
+          "members": [
+            "p09r1c07g3"
+          ]
+        },
+        {
+          "rep": "p09r2c03g4",
+          "members": [
+            "p09r2c03g4"
+          ]
+        },
+        {
+          "rep": "p01r3c18g4",
+          "members": [
+            "p01r3c18g4"
+          ]
+        },
+        {
+          "rep": "p05r1c08g5",
+          "members": [
+            "p05r1c08g5"
+          ]
+        },
+        {
+          "rep": "p09r1c10g7",
+          "members": [
+            "p09r1c10g7"
+          ]
+        },
+        {
+          "rep": "p06r2c03g2",
+          "members": [
+            "p06r2c03g2"
+          ]
+        },
+        {
+          "rep": "p11r2c04g5",
+          "members": [
+            "p11r2c04g5"
+          ]
+        },
+        {
+          "rep": "p03r2c20g7",
+          "members": [
+            "p03r2c20g7"
+          ]
+        },
+        {
+          "rep": "p05r3c11g5",
+          "members": [
+            "p05r3c11g5"
+          ]
+        },
+        {
+          "rep": "p11r1c06g2",
+          "members": [
+            "p11r1c06g2"
+          ]
+        },
+        {
+          "rep": "p04r1c01g1",
+          "members": [
+            "p04r1c01g1"
+          ]
+        },
+        {
+          "rep": "p09r2c01g7",
+          "members": [
+            "p09r2c01g7"
+          ]
+        },
+        {
+          "rep": "p05r2c08g4",
+          "members": [
+            "p05r2c08g4"
+          ]
+        },
+        {
+          "rep": "p06r2c17g3",
+          "members": [
+            "p06r2c17g3"
+          ]
+        },
+        {
+          "rep": "p06r1c09g7",
+          "members": [
+            "p06r1c09g7"
+          ]
+        },
+        {
+          "rep": "p06r2c01g2",
+          "members": [
+            "p06r2c01g2"
+          ]
+        },
+        {
+          "rep": "p05r2c20g4",
+          "members": [
+            "p05r2c20g4"
+          ]
+        },
+        {
+          "rep": "p02r1c02g4",
+          "members": [
+            "p02r1c02g4"
+          ]
+        },
+        {
+          "rep": "p07r1c11g5",
+          "members": [
+            "p07r1c11g5"
+          ]
+        },
+        {
+          "rep": "p03r3c06g7",
+          "members": [
+            "p03r3c06g7"
+          ]
+        },
+        {
+          "rep": "p02r1c09g3",
+          "members": [
+            "p02r1c09g3"
+          ]
+        },
+        {
+          "rep": "p11r3c16g6",
+          "members": [
+            "p11r3c16g6"
+          ]
+        },
+        {
+          "rep": "p09r2c09g7",
+          "members": [
+            "p09r2c09g7"
+          ]
+        },
+        {
+          "rep": "p02r1c02g7",
+          "members": [
+            "p02r1c02g7"
+          ]
+        },
+        {
+          "rep": "p04r3c16g5",
+          "members": [
+            "p04r3c16g5"
+          ]
+        },
+        {
+          "rep": "p02r1c05g7",
+          "members": [
+            "p02r1c05g7"
+          ]
+        },
+        {
+          "rep": "p02r1c02g2",
+          "members": [
+            "p02r1c02g2"
+          ]
+        },
+        {
+          "rep": "p04r1c14g6",
+          "members": [
+            "p04r1c14g6"
+          ]
+        },
+        {
+          "rep": "p06r1c03g1",
+          "members": [
+            "p06r1c03g1"
+          ]
+        },
+        {
+          "rep": "p09r1c17g3",
+          "members": [
+            "p09r1c17g3"
+          ]
+        },
+        {
+          "rep": "p04r2c09g5",
+          "members": [
+            "p04r2c09g5"
+          ]
+        },
+        {
+          "rep": "p05r2c01g3",
+          "members": [
+            "p05r2c01g3"
+          ]
+        },
+        {
+          "rep": "p05r2c18g4",
+          "members": [
+            "p05r2c18g4"
+          ]
+        },
+        {
+          "rep": "p09r2c01g2",
+          "members": [
+            "p09r2c01g2"
+          ]
+        },
+        {
+          "rep": "p08r1c09g3",
+          "members": [
+            "p08r1c09g3"
+          ]
+        },
+        {
+          "rep": "p09r2c09g2",
+          "members": [
+            "p09r2c09g2"
+          ]
+        }
+      ]
+    },
+    "不": {
+      "count": 42,
+      "default": "p05r2c07g6",
+      "clusters": [
+        {
+          "rep": "p05r2c07g6",
+          "members": [
+            "p03r3c06g4",
+            "p04r2c13g5",
+            "p05r2c07g6",
+            "p12r2c12g7"
+          ]
+        },
+        {
+          "rep": "p04r1c10g2",
+          "members": [
+            "p04r1c10g2",
+            "p12r2c12g3",
+            "p07r3c20g6"
+          ]
+        },
+        {
+          "rep": "p03r1c14g7",
+          "members": [
+            "p03r1c14g7",
+            "p10r1c12g3"
+          ]
+        },
+        {
+          "rep": "p09r3c18g3",
+          "members": [
+            "p09r3c18g3",
+            "p10r1c14g1"
+          ]
+        },
+        {
+          "rep": "p04r1c13g6",
+          "members": [
+            "p04r1c13g6"
+          ]
+        },
+        {
+          "rep": "p08r2c16g7",
+          "members": [
+            "p08r2c16g7"
+          ]
+        },
+        {
+          "rep": "p04r2c19g7",
+          "members": [
+            "p04r2c19g7"
+          ]
+        },
+        {
+          "rep": "p03r1c14g1",
+          "members": [
+            "p03r1c14g1"
+          ]
+        },
+        {
+          "rep": "p03r1c15g4",
+          "members": [
+            "p03r1c15g4"
+          ]
+        },
+        {
+          "rep": "p02r3c20g5",
+          "members": [
+            "p02r3c20g5"
+          ]
+        },
+        {
+          "rep": "p03r1c13g2",
+          "members": [
+            "p03r1c13g2"
+          ]
+        },
+        {
+          "rep": "p03r3c10g6",
+          "members": [
+            "p03r3c10g6"
+          ]
+        },
+        {
+          "rep": "p05r2c17g2",
+          "members": [
+            "p05r2c17g2"
+          ]
+        },
+        {
+          "rep": "p03r1c14g3",
+          "members": [
+            "p03r1c14g3"
+          ]
+        },
+        {
+          "rep": "p11r1c06g5",
+          "members": [
+            "p11r1c06g5"
+          ]
+        },
+        {
+          "rep": "p11r1c13g3",
+          "members": [
+            "p11r1c13g3"
+          ]
+        },
+        {
+          "rep": "p12r2c11g6",
+          "members": [
+            "p12r2c11g6"
+          ]
+        },
+        {
+          "rep": "p04r1c15g7",
+          "members": [
+            "p04r1c15g7"
+          ]
+        },
+        {
+          "rep": "p05r2c06g1",
+          "members": [
+            "p05r2c06g1"
+          ]
+        },
+        {
+          "rep": "p03r1c15g2",
+          "members": [
+            "p03r1c15g2"
+          ]
+        },
+        {
+          "rep": "p03r1c13g4",
+          "members": [
+            "p03r1c13g4"
+          ]
+        },
+        {
+          "rep": "p05r2c07g2",
+          "members": [
+            "p05r2c07g2"
+          ]
+        },
+        {
+          "rep": "p05r2c06g5",
+          "members": [
+            "p05r2c06g5"
+          ]
+        },
+        {
+          "rep": "p03r1c14g5",
+          "members": [
+            "p03r1c14g5"
+          ]
+        },
+        {
+          "rep": "p05r2c08g3",
+          "members": [
+            "p05r2c08g3"
+          ]
+        },
+        {
+          "rep": "p12r2c13g4",
+          "members": [
+            "p12r2c13g4"
+          ]
+        },
+        {
+          "rep": "p02r1c07g7",
+          "members": [
+            "p02r1c07g7"
+          ]
+        },
+        {
+          "rep": "p05r2c05g4",
+          "members": [
+            "p05r2c05g4"
+          ]
+        },
+        {
+          "rep": "p08r2c06g3",
+          "members": [
+            "p08r2c06g3"
+          ]
+        },
+        {
+          "rep": "p09r2c14g2",
+          "members": [
+            "p09r2c14g2"
+          ]
+        },
+        {
+          "rep": "p03r2c13g6",
+          "members": [
+            "p03r2c13g6"
+          ]
+        },
+        {
+          "rep": "p10r3c15g6",
+          "members": [
+            "p10r3c15g6"
+          ]
+        },
+        {
+          "rep": "p03r1c13g6",
+          "members": [
+            "p03r1c13g6"
+          ]
+        },
+        {
+          "rep": "p06r2c11g5",
+          "members": [
+            "p06r2c11g5"
+          ]
+        },
+        {
+          "rep": "p03r1c15g6",
+          "members": [
+            "p03r1c15g6"
+          ]
+        }
+      ]
+    },
+    "真": {
+      "count": 40,
+      "default": "p02r2c08g6",
+      "clusters": [
+        {
+          "rep": "p02r2c08g6",
+          "members": [
+            "p02r2c08g6",
+            "p08r2c11g1"
+          ]
+        },
+        {
+          "rep": "p02r1c12g3",
+          "members": [
+            "p02r1c12g3",
+            "p02r2c05g4"
+          ]
+        },
+        {
+          "rep": "p12r2c01g3",
+          "members": [
+            "p05r1c20g4",
+            "p12r2c01g3"
+          ]
+        },
+        {
+          "rep": "p08r1c01g5",
+          "members": [
+            "p08r1c01g5",
+            "p02r3c14g1"
+          ]
+        },
+        {
+          "rep": "p02r2c15g3",
+          "members": [
+            "p02r2c15g3"
+          ]
+        },
+        {
+          "rep": "p07r1c20g3",
+          "members": [
+            "p07r1c20g3"
+          ]
+        },
+        {
+          "rep": "p02r1c15g5",
+          "members": [
+            "p02r1c15g5"
+          ]
+        },
+        {
+          "rep": "p09r1c06g5",
+          "members": [
+            "p09r1c06g5"
+          ]
+        },
+        {
+          "rep": "p02r1c18g7",
+          "members": [
+            "p02r1c18g7"
+          ]
+        },
+        {
+          "rep": "p01r2c11g7",
+          "members": [
+            "p01r2c11g7"
+          ]
+        },
+        {
+          "rep": "p03r3c02g7",
+          "members": [
+            "p03r3c02g7"
+          ]
+        },
+        {
+          "rep": "p02r2c02g2",
+          "members": [
+            "p02r2c02g2"
+          ]
+        },
+        {
+          "rep": "p10r1c09g4",
+          "members": [
+            "p10r1c09g4"
+          ]
+        },
+        {
+          "rep": "p04r2c17g3",
+          "members": [
+            "p04r2c17g3"
+          ]
+        },
+        {
+          "rep": "p03r2c08g5",
+          "members": [
+            "p03r2c08g5"
+          ]
+        },
+        {
+          "rep": "p09r3c14g4",
+          "members": [
+            "p09r3c14g4"
+          ]
+        },
+        {
+          "rep": "p06r1c09g1",
+          "members": [
+            "p06r1c09g1"
+          ]
+        },
+        {
+          "rep": "p02r3c15g3",
+          "members": [
+            "p02r3c15g3"
+          ]
+        },
+        {
+          "rep": "p02r2c18g5",
+          "members": [
+            "p02r2c18g5"
+          ]
+        },
+        {
+          "rep": "p07r2c04g3",
+          "members": [
+            "p07r2c04g3"
+          ]
+        },
+        {
+          "rep": "p06r3c02g7",
+          "members": [
+            "p06r3c02g7"
+          ]
+        },
+        {
+          "rep": "p03r1c04g6",
+          "members": [
+            "p03r1c04g6"
+          ]
+        },
+        {
+          "rep": "p09r2c05g7",
+          "members": [
+            "p09r2c05g7"
+          ]
+        },
+        {
+          "rep": "p02r3c01g7",
+          "members": [
+            "p02r3c01g7"
+          ]
+        },
+        {
+          "rep": "p09r1c02g2",
+          "members": [
+            "p09r1c02g2"
+          ]
+        },
+        {
+          "rep": "p01r2c10g5",
+          "members": [
+            "p01r2c10g5"
+          ]
+        },
+        {
+          "rep": "p02r2c12g1",
+          "members": [
+            "p02r2c12g1"
+          ]
+        },
+        {
+          "rep": "p02r3c16g3",
+          "members": [
+            "p02r3c16g3"
+          ]
+        },
+        {
+          "rep": "p02r3c04g6",
+          "members": [
+            "p02r3c04g6"
+          ]
+        },
+        {
+          "rep": "p07r1c03g5",
+          "members": [
+            "p07r1c03g5"
+          ]
+        },
+        {
+          "rep": "p08r3c20g6",
+          "members": [
+            "p08r3c20g6"
+          ]
+        },
+        {
+          "rep": "p09r1c06g4",
+          "members": [
+            "p09r1c06g4"
+          ]
+        },
+        {
+          "rep": "p06r1c20g7",
+          "members": [
+            "p06r1c20g7"
+          ]
+        },
+        {
+          "rep": "p01r3c05g3",
+          "members": [
+            "p01r3c05g3"
+          ]
+        },
+        {
+          "rep": "p12r2c13g7",
+          "members": [
+            "p12r2c13g7"
+          ]
+        },
+        {
+          "rep": "p12r1c16g8",
+          "members": [
+            "p12r1c16g8"
+          ]
+        }
+      ]
+    },
+    "量": {
+      "count": 39,
+      "default": "p02r2c18g2",
+      "clusters": [
+        {
+          "rep": "p05r3c12g2",
+          "members": [
+            "p05r3c07g5",
+            "p05r3c12g2",
+            "p05r3c16g6",
+            "p05r3c09g7",
+            "p06r1c05g7",
+            "p05r3c14g4",
+            "p06r1c01g3",
+            "p06r1c03g5",
+            "p05r3c19g1",
+            "p06r1c08g2"
+          ]
+        },
+        {
+          "rep": "p02r2c18g2",
+          "members": [
+            "p02r1c15g2",
+            "p02r1c18g4",
+            "p02r2c05g1",
+            "p02r2c11g5",
+            "p02r2c18g2",
+            "p02r3c01g4",
+            "p02r2c08g3",
+            "p02r2c14g7",
+            "p02r1c11g7"
+          ]
+        },
+        {
+          "rep": "p09r3c05g5",
+          "members": [
+            "p09r3c05g5",
+            "p12r1c14g4"
+          ]
+        },
+        {
+          "rep": "p06r1c10g4",
+          "members": [
+            "p06r1c10g4",
+            "p07r3c20g2"
+          ]
+        },
+        {
+          "rep": "p04r1c14g3",
+          "members": [
+            "p04r1c14g3"
+          ]
+        },
+        {
+          "rep": "p02r2c01g6",
+          "members": [
+            "p02r2c01g6"
+          ]
+        },
+        {
+          "rep": "p10r3c16g2",
+          "members": [
+            "p10r3c16g2"
+          ]
+        },
+        {
+          "rep": "p11r2c20g2",
+          "members": [
+            "p11r2c20g2"
+          ]
+        },
+        {
+          "rep": "p12r3c04g1",
+          "members": [
+            "p12r3c04g1"
+          ]
+        },
+        {
+          "rep": "p01r2c07g2",
+          "members": [
+            "p01r2c07g2"
+          ]
+        },
+        {
+          "rep": "p11r2c06g2",
+          "members": [
+            "p11r2c06g2"
+          ]
+        },
+        {
+          "rep": "p12r1c19g5",
+          "members": [
+            "p12r1c19g5"
+          ]
+        },
+        {
+          "rep": "p09r1c17g5",
+          "members": [
+            "p09r1c17g5"
+          ]
+        },
+        {
+          "rep": "p05r1c07g2",
+          "members": [
+            "p05r1c07g2"
+          ]
+        },
+        {
+          "rep": "p12r1c07g2",
+          "members": [
+            "p12r1c07g2"
+          ]
+        },
+        {
+          "rep": "p05r1c14g4",
+          "members": [
+            "p05r1c14g4"
+          ]
+        },
+        {
+          "rep": "p05r3c04g2",
+          "members": [
+            "p05r3c04g2"
+          ]
+        },
+        {
+          "rep": "p10r2c10g7",
+          "members": [
+            "p10r2c10g7"
+          ]
+        },
+        {
+          "rep": "p01r2c03g1",
+          "members": [
+            "p01r2c03g1"
+          ]
+        },
+        {
+          "rep": "p03r3c13g2",
+          "members": [
+            "p03r3c13g2"
+          ]
+        }
+      ]
+    },
+    "至": {
+      "count": 34,
+      "default": "p02r2c18g4",
+      "clusters": [
+        {
+          "rep": "p02r2c16g6",
+          "members": [
+            "p02r2c16g6",
+            "p02r2c20g1",
+            "p02r2c03g5",
+            "p02r2c06g7",
+            "p02r1c13g6",
+            "p02r2c10g2",
+            "p02r2c13g4",
+            "p02r3c03g3"
+          ]
+        },
+        {
+          "rep": "p02r2c18g4",
+          "members": [
+            "p02r1c12g2",
+            "p02r1c15g4",
+            "p02r1c18g6",
+            "p02r2c15g2",
+            "p02r2c18g4",
+            "p02r3c01g6"
+          ]
+        },
+        {
+          "rep": "p02r2c05g3",
+          "members": [
+            "p02r2c02g1",
+            "p02r2c05g3",
+            "p02r2c08g5",
+            "p02r2c11g7"
+          ]
+        },
+        {
+          "rep": "p04r1c02g2",
+          "members": [
+            "p04r1c02g2"
+          ]
+        },
+        {
+          "rep": "p06r1c08g7",
+          "members": [
+            "p06r1c08g7"
+          ]
+        },
+        {
+          "rep": "p05r1c11g2",
+          "members": [
+            "p05r1c11g2"
+          ]
+        },
+        {
+          "rep": "p11r1c01g6",
+          "members": [
+            "p11r1c01g6"
+          ]
+        },
+        {
+          "rep": "p10r3c09g6",
+          "members": [
+            "p10r3c09g6"
+          ]
+        },
+        {
+          "rep": "p02r3c05g5",
+          "members": [
+            "p02r3c05g5"
+          ]
+        },
+        {
+          "rep": "p02r3c16g2",
+          "members": [
+            "p02r3c16g2"
+          ]
+        },
+        {
+          "rep": "p02r1c20g3",
+          "members": [
+            "p02r1c20g3"
+          ]
+        },
+        {
+          "rep": "p11r2c18g4",
+          "members": [
+            "p11r2c18g4"
+          ]
+        },
+        {
+          "rep": "p03r2c16g3",
+          "members": [
+            "p03r2c16g3"
+          ]
+        },
+        {
+          "rep": "p04r1c16g4",
+          "members": [
+            "p04r1c16g4"
+          ]
+        },
+        {
+          "rep": "p10r2c16g6",
+          "members": [
+            "p10r2c16g6"
+          ]
+        },
+        {
+          "rep": "p02r1c17g1",
+          "members": [
+            "p02r1c17g1"
+          ]
+        },
+        {
+          "rep": "p10r3c03g7",
+          "members": [
+            "p10r3c03g7"
+          ]
+        },
+        {
+          "rep": "p11r2c13g2",
+          "members": [
+            "p11r2c13g2"
+          ]
+        },
+        {
+          "rep": "p05r1c06g6",
+          "members": [
+            "p05r1c06g6"
+          ]
+        }
+      ]
+    },
+    "三": {
+      "count": 33,
+      "default": "p04r3c20g4",
+      "clusters": [
+        {
+          "rep": "p09r3c10g1",
+          "members": [
+            "p09r3c10g1",
+            "p12r2c10g3"
+          ]
+        },
+        {
+          "rep": "p04r3c20g4",
+          "members": [
+            "p04r3c20g4"
+          ]
+        },
+        {
+          "rep": "p10r1c14g5",
+          "members": [
+            "p10r1c14g5"
+          ]
+        },
+        {
+          "rep": "p01r3c12g5",
+          "members": [
+            "p01r3c12g5"
+          ]
+        },
+        {
+          "rep": "p04r3c01g1",
+          "members": [
+            "p04r3c01g1"
+          ]
+        },
+        {
+          "rep": "p05r1c12g2",
+          "members": [
+            "p05r1c12g2"
+          ]
+        },
+        {
+          "rep": "p08r1c04g1",
+          "members": [
+            "p08r1c04g1"
+          ]
+        },
+        {
+          "rep": "p05r1c04g2",
+          "members": [
+            "p05r1c04g2"
+          ]
+        },
+        {
+          "rep": "p05r1c10g1",
+          "members": [
+            "p05r1c10g1"
+          ]
+        },
+        {
+          "rep": "p08r2c19g2",
+          "members": [
+            "p08r2c19g2"
+          ]
+        },
+        {
+          "rep": "p08r3c17g4",
+          "members": [
+            "p08r3c17g4"
+          ]
+        },
+        {
+          "rep": "p04r3c11g4",
+          "members": [
+            "p04r3c11g4"
+          ]
+        },
+        {
+          "rep": "p10r1c16g7",
+          "members": [
+            "p10r1c16g7"
+          ]
+        },
+        {
+          "rep": "p04r3c09g5",
+          "members": [
+            "p04r3c09g5"
+          ]
+        },
+        {
+          "rep": "p06r3c01g1",
+          "members": [
+            "p06r3c01g1"
+          ]
+        },
+        {
+          "rep": "p07r3c12g1",
+          "members": [
+            "p07r3c12g1"
+          ]
+        },
+        {
+          "rep": "p07r3c12g5",
+          "members": [
+            "p07r3c12g5"
+          ]
+        },
+        {
+          "rep": "p08r2c15g6",
+          "members": [
+            "p08r2c15g6"
+          ]
+        },
+        {
+          "rep": "p05r2c02g1",
+          "members": [
+            "p05r2c02g1"
+          ]
+        },
+        {
+          "rep": "p05r2c13g2",
+          "members": [
+            "p05r2c13g2"
+          ]
+        },
+        {
+          "rep": "p12r2c17g1",
+          "members": [
+            "p12r2c17g1"
+          ]
+        },
+        {
+          "rep": "p06r2c06g2",
+          "members": [
+            "p06r2c06g2"
+          ]
+        },
+        {
+          "rep": "p04r3c08g6",
+          "members": [
+            "p04r3c08g6"
+          ]
+        },
+        {
+          "rep": "p09r3c20g2",
+          "members": [
+            "p09r3c20g2"
+          ]
+        },
+        {
+          "rep": "p02r1c17g4",
+          "members": [
+            "p02r1c17g4"
+          ]
+        },
+        {
+          "rep": "p10r1c01g3",
+          "members": [
+            "p10r1c01g3"
+          ]
+        },
+        {
+          "rep": "p03r2c18g2",
+          "members": [
+            "p03r2c18g2"
+          ]
+        },
+        {
+          "rep": "p06r2c19g7",
+          "members": [
+            "p06r2c19g7"
+          ]
+        },
+        {
+          "rep": "p04r3c07g7",
+          "members": [
+            "p04r3c07g7"
+          ]
+        },
+        {
+          "rep": "p10r2c03g7",
+          "members": [
+            "p10r2c03g7"
+          ]
+        },
+        {
+          "rep": "p06r2c08g2",
+          "members": [
+            "p06r2c08g2"
+          ]
+        },
+        {
+          "rep": "p08r3c14g5",
+          "members": [
+            "p08r3c14g5"
+          ]
+        }
+      ]
+    },
+    "王": {
+      "count": 32,
+      "default": "p05r3c18g2",
+      "clusters": [
+        {
+          "rep": "p05r3c18g2",
+          "members": [
+            "p05r3c18g2",
+            "p06r1c05g1",
+            "p06r1c07g3",
+            "p05r3c13g5",
+            "p05r3c15g7",
+            "p05r3c11g3",
+            "p06r1c02g6"
+          ]
+        },
+        {
+          "rep": "p06r1c09g5",
+          "members": [
+            "p06r1c09g5"
+          ]
+        },
+        {
+          "rep": "p09r3c20g7",
+          "members": [
+            "p09r3c20g7"
+          ]
+        },
+        {
+          "rep": "p05r3c20g4",
+          "members": [
+            "p05r3c20g4"
+          ]
+        },
+        {
+          "rep": "p08r1c16g6",
+          "members": [
+            "p08r1c16g6"
+          ]
+        },
+        {
+          "rep": "p05r3c06g6",
+          "members": [
+            "p05r3c06g6"
+          ]
+        },
+        {
+          "rep": "p07r2c06g5",
+          "members": [
+            "p07r2c06g5"
+          ]
+        },
+        {
+          "rep": "p05r3c09g1",
+          "members": [
+            "p05r3c09g1"
+          ]
+        },
+        {
+          "rep": "p08r1c14g4",
+          "members": [
+            "p08r1c14g4"
+          ]
+        },
+        {
+          "rep": "p10r2c17g2",
+          "members": [
+            "p10r2c17g2"
+          ]
+        },
+        {
+          "rep": "p10r1c07g4",
+          "members": [
+            "p10r1c07g4"
+          ]
+        },
+        {
+          "rep": "p12r2c08g6",
+          "members": [
+            "p12r2c08g6"
+          ]
+        },
+        {
+          "rep": "p10r2c05g4",
+          "members": [
+            "p10r2c05g4"
+          ]
+        },
+        {
+          "rep": "p12r2c05g3",
+          "members": [
+            "p12r2c05g3"
+          ]
+        },
+        {
+          "rep": "p08r1c17g7",
+          "members": [
+            "p08r1c17g7"
+          ]
+        },
+        {
+          "rep": "p08r1c15g5",
+          "members": [
+            "p08r1c15g5"
+          ]
+        },
+        {
+          "rep": "p11r2c16g5",
+          "members": [
+            "p11r2c16g5"
+          ]
+        },
+        {
+          "rep": "p04r2c11g2",
+          "members": [
+            "p04r2c11g2"
+          ]
+        },
+        {
+          "rep": "p09r2c05g1",
+          "members": [
+            "p09r2c05g1"
+          ]
+        },
+        {
+          "rep": "p10r2c02g1",
+          "members": [
+            "p10r2c02g1"
+          ]
+        },
+        {
+          "rep": "p03r2c06g1",
+          "members": [
+            "p03r2c06g1"
+          ]
+        },
+        {
+          "rep": "p10r1c18g2",
+          "members": [
+            "p10r1c18g2"
+          ]
+        },
+        {
+          "rep": "p08r1c06g2",
+          "members": [
+            "p08r1c06g2"
+          ]
+        },
+        {
+          "rep": "p11r2c03g3",
+          "members": [
+            "p11r2c03g3"
+          ]
+        },
+        {
+          "rep": "p08r1c19g1",
+          "members": [
+            "p08r1c19g1"
+          ]
+        },
+        {
+          "rep": "p09r3c02g6",
+          "members": [
+            "p09r3c02g6"
+          ]
+        }
+      ]
+    },
+    "极": {
+      "count": 31,
+      "default": "p02r1c14g7",
+      "clusters": [
+        {
+          "rep": "p02r1c14g7",
+          "members": [
+            "p02r1c11g5",
+            "p02r1c14g7",
+            "p02r1c18g2",
+            "p02r2c08g1",
+            "p02r2c14g5",
+            "p02r2c01g4",
+            "p02r2c04g6",
+            "p02r2c11g3",
+            "p02r2c17g7",
+            "p02r3c01g2"
+          ]
+        },
+        {
+          "rep": "p05r3c13g1",
+          "members": [
+            "p05r3c13g1",
+            "p05r3c19g7",
+            "p06r1c02g2",
+            "p06r1c06g6",
+            "p05r3c10g6",
+            "p06r1c04g4",
+            "p05r3c08g4",
+            "p05r3c17g5"
+          ]
+        },
+        {
+          "rep": "p05r2c18g2",
+          "members": [
+            "p05r2c18g2"
+          ]
+        },
+        {
+          "rep": "p06r2c06g5",
+          "members": [
+            "p06r2c06g5"
+          ]
+        },
+        {
+          "rep": "p05r2c11g1",
+          "members": [
+            "p05r2c11g1"
+          ]
+        },
+        {
+          "rep": "p07r1c16g3",
+          "members": [
+            "p07r1c16g3"
+          ]
+        },
+        {
+          "rep": "p05r3c06g2",
+          "members": [
+            "p05r3c06g2"
+          ]
+        },
+        {
+          "rep": "p06r3c19g2",
+          "members": [
+            "p06r3c19g2"
+          ]
+        },
+        {
+          "rep": "p05r3c15g3",
+          "members": [
+            "p05r3c15g3"
+          ]
+        },
+        {
+          "rep": "p02r3c16g1",
+          "members": [
+            "p02r3c16g1"
+          ]
+        },
+        {
+          "rep": "p02r3c04g4",
+          "members": [
+            "p02r3c04g4"
+          ]
+        },
+        {
+          "rep": "p07r2c03g3",
+          "members": [
+            "p07r2c03g3"
+          ]
+        },
+        {
+          "rep": "p07r2c13g2",
+          "members": [
+            "p07r2c13g2"
+          ]
+        },
+        {
+          "rep": "p07r3c10g2",
+          "members": [
+            "p07r3c10g2"
+          ]
+        },
+        {
+          "rep": "p08r3c06g6",
+          "members": [
+            "p08r3c06g6"
+          ]
+        }
+      ]
+    },
+    "空": {
+      "count": 30,
+      "default": "p02r2c09g7",
+      "clusters": [
+        {
+          "rep": "p02r2c09g7",
+          "members": [
+            "p02r1c16g6",
+            "p02r2c09g7",
+            "p02r2c16g4",
+            "p02r2c03g3",
+            "p02r2c06g5",
+            "p02r3c03g1",
+            "p02r1c13g4",
+            "p02r1c20g1",
+            "p02r2c19g6",
+            "p02r2c13g2"
+          ]
+        },
+        {
+          "rep": "p07r3c14g5",
+          "members": [
+            "p07r3c14g5"
+          ]
+        },
+        {
+          "rep": "p07r1c05g2",
+          "members": [
+            "p07r1c05g2"
+          ]
+        },
+        {
+          "rep": "p02r3c12g2",
+          "members": [
+            "p02r3c12g2"
+          ]
+        },
+        {
+          "rep": "p04r1c11g6",
+          "members": [
+            "p04r1c11g6"
+          ]
+        },
+        {
+          "rep": "p01r3c06g5",
+          "members": [
+            "p01r3c06g5"
+          ]
+        },
+        {
+          "rep": "p09r3c16g2",
+          "members": [
+            "p09r3c16g2"
+          ]
+        },
+        {
+          "rep": "p12r1c08g6",
+          "members": [
+            "p12r1c08g6"
+          ]
+        },
+        {
+          "rep": "p10r2c03g4",
+          "members": [
+            "p10r2c03g4"
+          ]
+        },
+        {
+          "rep": "p12r1c15g5",
+          "members": [
+            "p12r1c15g5"
+          ]
+        },
+        {
+          "rep": "p01r2c12g7",
+          "members": [
+            "p01r2c12g7"
+          ]
+        },
+        {
+          "rep": "p11r3c13g4",
+          "members": [
+            "p11r3c13g4"
+          ]
+        },
+        {
+          "rep": "p10r1c08g2",
+          "members": [
+            "p10r1c08g2"
+          ]
+        },
+        {
+          "rep": "p10r1c17g5",
+          "members": [
+            "p10r1c17g5"
+          ]
+        },
+        {
+          "rep": "p01r2c05g4",
+          "members": [
+            "p01r2c05g4"
+          ]
+        },
+        {
+          "rep": "p09r2c13g3",
+          "members": [
+            "p09r2c13g3"
+          ]
+        },
+        {
+          "rep": "p06r1c19g6",
+          "members": [
+            "p06r1c19g6"
+          ]
+        },
+        {
+          "rep": "p09r2c06g6",
+          "members": [
+            "p09r2c06g6"
+          ]
+        },
+        {
+          "rep": "p01r2c16g5",
+          "members": [
+            "p01r2c16g5"
+          ]
+        },
+        {
+          "rep": "p08r2c03g1",
+          "members": [
+            "p08r2c03g1"
+          ]
+        },
+        {
+          "rep": "p09r2c04g1",
+          "members": [
+            "p09r2c04g1"
+          ]
+        }
+      ]
+    },
+    "长": {
+      "count": 28,
+      "default": "p06r1c02g7",
+      "clusters": [
+        {
+          "rep": "p06r1c02g7",
+          "members": [
+            "p06r1c02g7",
+            "p06r1c05g2",
+            "p06r1c07g4",
+            "p05r3c11g4",
+            "p05r3c13g6",
+            "p05r3c18g3",
+            "p05r3c20g5"
+          ]
+        },
+        {
+          "rep": "p05r3c06g7",
+          "members": [
+            "p05r3c06g7",
+            "p05r3c09g2"
+          ]
+        },
+        {
+          "rep": "p04r2c03g5",
+          "members": [
+            "p04r2c03g5",
+            "p09r1c07g2"
+          ]
+        },
+        {
+          "rep": "p04r2c06g5",
+          "members": [
+            "p04r2c06g5"
+          ]
+        },
+        {
+          "rep": "p07r3c03g5",
+          "members": [
+            "p07r3c03g5"
+          ]
+        },
+        {
+          "rep": "p12r1c08g3",
+          "members": [
+            "p12r1c08g3"
+          ]
+        },
+        {
+          "rep": "p02r1c09g2",
+          "members": [
+            "p02r1c09g2"
+          ]
+        },
+        {
+          "rep": "p04r2c13g1",
+          "members": [
+            "p04r2c13g1"
+          ]
+        },
+        {
+          "rep": "p06r2c18g2",
+          "members": [
+            "p06r2c18g2"
+          ]
+        },
+        {
+          "rep": "p04r1c19g2",
+          "members": [
+            "p04r1c19g2"
+          ]
+        },
+        {
+          "rep": "p04r1c08g2",
+          "members": [
+            "p04r1c08g2"
+          ]
+        },
+        {
+          "rep": "p04r2c19g5",
+          "members": [
+            "p04r2c19g5"
+          ]
+        },
+        {
+          "rep": "p05r1c05g7",
+          "members": [
+            "p05r1c05g7"
+          ]
+        },
+        {
+          "rep": "p08r3c12g5",
+          "members": [
+            "p08r3c12g5"
+          ]
+        },
+        {
+          "rep": "p04r2c10g1",
+          "members": [
+            "p04r2c10g1"
+          ]
+        },
+        {
+          "rep": "p05r3c16g1",
+          "members": [
+            "p05r3c16g1"
+          ]
+        },
+        {
+          "rep": "p06r1c09g6",
+          "members": [
+            "p06r1c09g6"
+          ]
+        },
+        {
+          "rep": "p09r3c10g7",
+          "members": [
+            "p09r3c10g7"
+          ]
+        },
+        {
+          "rep": "p12r1c20g6",
+          "members": [
+            "p12r1c20g6"
+          ]
+        },
+        {
+          "rep": "p05r2c18g3",
+          "members": [
+            "p05r2c18g3"
+          ]
+        }
+      ]
+    },
+    "明": {
+      "count": 26,
+      "default": "p06r3c13g2",
+      "clusters": [
+        {
+          "rep": "p06r3c13g2",
+          "members": [
+            "p06r3c13g2",
+            "p08r2c16g3",
+            "p08r3c08g4"
+          ]
+        },
+        {
+          "rep": "p03r3c11g2",
+          "members": [
+            "p03r3c11g2",
+            "p04r2c20g7"
+          ]
+        },
+        {
+          "rep": "p06r3c09g2",
+          "members": [
+            "p06r3c09g2",
+            "p07r2c10g2"
+          ]
+        },
+        {
+          "rep": "p06r3c07g2",
+          "members": [
+            "p06r3c07g2"
+          ]
+        },
+        {
+          "rep": "p11r3c04g3",
+          "members": [
+            "p11r3c04g3"
+          ]
+        },
+        {
+          "rep": "p11r2c18g3",
+          "members": [
+            "p11r2c18g3"
+          ]
+        },
+        {
+          "rep": "p05r2c01g7",
+          "members": [
+            "p05r2c01g7"
+          ]
+        },
+        {
+          "rep": "p07r1c02g2",
+          "members": [
+            "p07r1c02g2"
+          ]
+        },
+        {
+          "rep": "p11r3c08g5",
+          "members": [
+            "p11r3c08g5"
+          ]
+        },
+        {
+          "rep": "p01r3c12g2",
+          "members": [
+            "p01r3c12g2"
+          ]
+        },
+        {
+          "rep": "p07r1c12g2",
+          "members": [
+            "p07r1c12g2"
+          ]
+        },
+        {
+          "rep": "p07r1c10g2",
+          "members": [
+            "p07r1c10g2"
+          ]
+        },
+        {
+          "rep": "p07r1c14g2",
+          "members": [
+            "p07r1c14g2"
+          ]
+        },
+        {
+          "rep": "p07r1c07g4",
+          "members": [
+            "p07r1c07g4"
+          ]
+        },
+        {
+          "rep": "p06r3c06g5",
+          "members": [
+            "p06r3c06g5"
+          ]
+        },
+        {
+          "rep": "p04r3c15g6",
+          "members": [
+            "p04r3c15g6"
+          ]
+        },
+        {
+          "rep": "p05r2c06g2",
+          "members": [
+            "p05r2c06g2"
+          ]
+        },
+        {
+          "rep": "p07r1c04g2",
+          "members": [
+            "p07r1c04g2"
+          ]
+        },
+        {
+          "rep": "p07r1c06g2",
+          "members": [
+            "p07r1c06g2"
+          ]
+        },
+        {
+          "rep": "p04r3c18g1",
+          "members": [
+            "p04r3c18g1"
+          ]
+        },
+        {
+          "rep": "p09r3c03g6",
+          "members": [
+            "p09r3c03g6"
+          ]
+        },
+        {
+          "rep": "p06r3c15g2",
+          "members": [
+            "p06r3c15g2"
+          ]
+        }
+      ]
+    },
+    "说": {
+      "count": 23,
+      "default": "p02r2c16g7",
+      "clusters": [
+        {
+          "rep": "p02r2c16g7",
+          "members": [
+            "p02r2c03g6",
+            "p02r2c07g1",
+            "p02r2c13g5",
+            "p02r2c16g7",
+            "p02r1c13g7",
+            "p02r1c17g2",
+            "p02r1c20g4",
+            "p02r1c10g5",
+            "p02r2c10g3",
+            "p02r2c20g2"
+          ]
+        },
+        {
+          "rep": "p01r3c11g2",
+          "members": [
+            "p01r3c11g2"
+          ]
+        },
+        {
+          "rep": "p01r3c12g3",
+          "members": [
+            "p01r3c12g3"
+          ]
+        },
+        {
+          "rep": "p01r3c07g6",
+          "members": [
+            "p01r3c07g6"
+          ]
+        },
+        {
+          "rep": "p01r3c13g4",
+          "members": [
+            "p01r3c13g4"
+          ]
+        },
+        {
+          "rep": "p02r1c04g7",
+          "members": [
+            "p02r1c04g7"
+          ]
+        },
+        {
+          "rep": "p03r2c03g2",
+          "members": [
+            "p03r2c03g2"
+          ]
+        },
+        {
+          "rep": "p02r1c03g2",
+          "members": [
+            "p02r1c03g2"
+          ]
+        },
+        {
+          "rep": "p01r2c08g3",
+          "members": [
+            "p01r2c08g3"
+          ]
+        },
+        {
+          "rep": "p01r3c16g7",
+          "members": [
+            "p01r3c16g7"
+          ]
+        },
+        {
+          "rep": "p01r3c15g2",
+          "members": [
+            "p01r3c15g2"
+          ]
+        },
+        {
+          "rep": "p01r3c20g3",
+          "members": [
+            "p01r3c20g3"
+          ]
+        },
+        {
+          "rep": "p01r3c18g5",
+          "members": [
+            "p01r3c18g5"
+          ]
+        },
+        {
+          "rep": "p03r1c04g1",
+          "members": [
+            "p03r1c04g1"
+          ]
+        }
+      ]
+    },
+    "言": {
+      "count": 22,
+      "default": "p10r2c15g2",
+      "clusters": [
+        {
+          "rep": "p10r2c15g2",
+          "members": [
+            "p02r1c09g5",
+            "p03r1c06g6",
+            "p03r2c03g6",
+            "p10r2c15g2",
+            "p04r2c03g2",
+            "p04r3c05g2",
+            "p10r2c18g5",
+            "p10r2c19g4",
+            "p08r2c19g7"
+          ]
+        },
+        {
+          "rep": "p05r1c05g2",
+          "members": [
+            "p05r1c05g2",
+            "p11r2c18g5"
+          ]
+        },
+        {
+          "rep": "p03r3c16g2",
+          "members": [
+            "p03r3c16g2",
+            "p10r3c18g2"
+          ]
+        },
+        {
+          "rep": "p11r1c08g2",
+          "members": [
+            "p11r1c08g2"
+          ]
+        },
+        {
+          "rep": "p03r1c16g1",
+          "members": [
+            "p03r1c16g1"
+          ]
+        },
+        {
+          "rep": "p01r2c04g2",
+          "members": [
+            "p01r2c04g2"
+          ]
+        },
+        {
+          "rep": "p10r3c07g2",
+          "members": [
+            "p10r3c07g2"
+          ]
+        },
+        {
+          "rep": "p12r1c18g2",
+          "members": [
+            "p12r1c18g2"
+          ]
+        },
+        {
+          "rep": "p03r2c02g4",
+          "members": [
+            "p03r2c02g4"
+          ]
+        },
+        {
+          "rep": "p05r1c02g4",
+          "members": [
+            "p05r1c02g4"
+          ]
+        },
+        {
+          "rep": "p11r2c07g2",
+          "members": [
+            "p11r2c07g2"
+          ]
+        },
+        {
+          "rep": "p01r3c13g3",
+          "members": [
+            "p01r3c13g3"
+          ]
+        }
+      ]
+    },
+    "仙": {
+      "count": 21,
+      "default": "p10r1c12g6",
+      "clusters": [
+        {
+          "rep": "p10r1c12g6",
+          "members": [
+            "p09r1c16g6",
+            "p10r1c12g6",
+            "p04r2c07g7",
+            "p09r3c07g6",
+            "p04r1c03g4",
+            "p10r3c19g2"
+          ]
+        },
+        {
+          "rep": "p09r2c07g6",
+          "members": [
+            "p09r2c07g6"
+          ]
+        },
+        {
+          "rep": "p10r2c04g4",
+          "members": [
+            "p10r2c04g4"
+          ]
+        },
+        {
+          "rep": "p09r1c16g7",
+          "members": [
+            "p09r1c16g7"
+          ]
+        },
+        {
+          "rep": "p09r1c05g3",
+          "members": [
+            "p09r1c05g3"
+          ]
+        },
+        {
+          "rep": "p11r1c07g3",
+          "members": [
+            "p11r1c07g3"
+          ]
+        },
+        {
+          "rep": "p09r2c10g5",
+          "members": [
+            "p09r2c10g5"
+          ]
+        },
+        {
+          "rep": "p09r3c07g5",
+          "members": [
+            "p09r3c07g5"
+          ]
+        },
+        {
+          "rep": "p12r1c08g8",
+          "members": [
+            "p12r1c08g8"
+          ]
+        },
+        {
+          "rep": "p10r1c14g3",
+          "members": [
+            "p10r1c14g3"
+          ]
+        },
+        {
+          "rep": "p12r3c02g1",
+          "members": [
+            "p12r3c02g1"
+          ]
+        },
+        {
+          "rep": "p12r2c09g3",
+          "members": [
+            "p12r2c09g3"
+          ]
+        },
+        {
+          "rep": "p06r1c18g5",
+          "members": [
+            "p06r1c18g5"
+          ]
+        },
+        {
+          "rep": "p09r2c13g6",
+          "members": [
+            "p09r2c13g6"
+          ]
+        },
+        {
+          "rep": "p10r1c10g4",
+          "members": [
+            "p10r1c10g4"
+          ]
+        },
+        {
+          "rep": "p06r2c16g6",
+          "members": [
+            "p06r2c16g6"
+          ]
+        }
+      ]
+    },
+    "八": {
+      "count": 20,
+      "default": "p08r3c11g2",
+      "clusters": [
+        {
+          "rep": "p08r3c11g2",
+          "members": [
+            "p02r2c13g7",
+            "p08r3c11g2",
+            "p11r3c20g3"
+          ]
+        },
+        {
+          "rep": "p08r3c18g5",
+          "members": [
+            "p08r3c18g5",
+            "p09r1c18g3",
+            "p08r2c09g6"
+          ]
+        },
+        {
+          "rep": "p11r3c02g3",
+          "members": [
+            "p11r3c02g3",
+            "p12r1c09g3"
+          ]
+        },
+        {
+          "rep": "p09r1c12g3",
+          "members": [
+            "p09r1c12g3"
+          ]
+        },
+        {
+          "rep": "p08r2c06g5",
+          "members": [
+            "p08r2c06g5"
+          ]
+        },
+        {
+          "rep": "p04r2c15g5",
+          "members": [
+            "p04r2c15g5"
+          ]
+        },
+        {
+          "rep": "p07r2c15g3",
+          "members": [
+            "p07r2c15g3"
+          ]
+        },
+        {
+          "rep": "p11r3c11g3",
+          "members": [
+            "p11r3c11g3"
+          ]
+        },
+        {
+          "rep": "p06r3c04g3",
+          "members": [
+            "p06r3c04g3"
+          ]
+        },
+        {
+          "rep": "p06r1c16g2",
+          "members": [
+            "p06r1c16g2"
+          ]
+        },
+        {
+          "rep": "p06r2c20g4",
+          "members": [
+            "p06r2c20g4"
+          ]
+        },
+        {
+          "rep": "p01r3c20g5",
+          "members": [
+            "p01r3c20g5"
+          ]
+        },
+        {
+          "rep": "p07r1c01g3",
+          "members": [
+            "p07r1c01g3"
+          ]
+        },
+        {
+          "rep": "p07r1c18g3",
+          "members": [
+            "p07r1c18g3"
+          ]
+        },
+        {
+          "rep": "p10r2c07g7",
+          "members": [
+            "p10r2c07g7"
+          ]
+        }
+      ]
+    },
+    "而": {
+      "count": 19,
+      "default": "p12r2c03g6",
+      "clusters": [
+        {
+          "rep": "p02r1c13g5",
+          "members": [
+            "p02r1c13g5",
+            "p02r1c16g7",
+            "p02r1c20g2",
+            "p02r2c10g1",
+            "p02r2c13g3",
+            "p02r3c03g2",
+            "p03r2c20g5",
+            "p04r1c01g6",
+            "p02r2c06g6",
+            "p02r2c19g7",
+            "p02r2c16g5",
+            "p10r3c06g2",
+            "p11r1c05g6",
+            "p02r2c03g4"
+          ]
+        },
+        {
+          "rep": "p01r2c13g1",
+          "members": [
+            "p01r2c13g1"
+          ]
+        },
+        {
+          "rep": "p03r3c06g2",
+          "members": [
+            "p03r3c06g2"
+          ]
+        },
+        {
+          "rep": "p12r2c03g6",
+          "members": [
+            "p12r2c03g6"
+          ]
+        },
+        {
+          "rep": "p04r1c17g6",
+          "members": [
+            "p04r1c17g6"
+          ]
+        },
+        {
+          "rep": "p06r1c19g7",
+          "members": [
+            "p06r1c19g7"
+          ]
+        }
+      ]
+    },
+    "浮": {
+      "count": 18,
+      "default": "p02r2c09g6",
+      "clusters": [
+        {
+          "rep": "p02r2c09g6",
+          "members": [
+            "p02r1c16g5",
+            "p02r2c03g2",
+            "p02r2c06g4",
+            "p02r2c09g6",
+            "p02r2c16g3",
+            "p02r1c19g7",
+            "p02r2c13g1",
+            "p02r3c02g7",
+            "p02r1c13g3",
+            "p02r2c19g5"
+          ]
+        },
+        {
+          "rep": "p01r3c06g6",
+          "members": [
+            "p01r3c06g6"
+          ]
+        },
+        {
+          "rep": "p07r2c07g5",
+          "members": [
+            "p07r2c07g5"
+          ]
+        },
+        {
+          "rep": "p11r3c12g4",
+          "members": [
+            "p11r3c12g4"
+          ]
+        },
+        {
+          "rep": "p12r1c07g5",
+          "members": [
+            "p12r1c07g5"
+          ]
+        },
+        {
+          "rep": "p06r1c19g5",
+          "members": [
+            "p06r1c19g5"
+          ]
+        },
+        {
+          "rep": "p12r1c15g3",
+          "members": [
+            "p12r1c15g3"
+          ]
+        },
+        {
+          "rep": "p01r2c20g6",
+          "members": [
+            "p01r2c20g6"
+          ]
+        },
+        {
+          "rep": "p01r2c05g7",
+          "members": [
+            "p01r2c05g7"
+          ]
+        }
+      ]
+    },
+    "品": {
+      "count": 18,
+      "default": "p02r3c01g5",
+      "clusters": [
+        {
+          "rep": "p02r3c01g5",
+          "members": [
+            "p02r2c01g7",
+            "p02r2c11g6",
+            "p02r3c01g5",
+            "p02r2c05g2",
+            "p02r2c08g4",
+            "p02r2c15g1",
+            "p02r1c12g1",
+            "p02r1c18g5",
+            "p02r1c15g3",
+            "p02r2c18g3"
+          ]
+        },
+        {
+          "rep": "p01r2c03g5",
+          "members": [
+            "p01r2c03g5",
+            "p05r1c15g1"
+          ]
+        },
+        {
+          "rep": "p05r1c17g3",
+          "members": [
+            "p05r1c17g3"
+          ]
+        },
+        {
+          "rep": "p06r2c15g6",
+          "members": [
+            "p06r2c15g6"
+          ]
+        },
+        {
+          "rep": "p10r3c19g3",
+          "members": [
+            "p10r3c19g3"
+          ]
+        },
+        {
+          "rep": "p12r1c06g7",
+          "members": [
+            "p12r1c06g7"
+          ]
+        },
+        {
+          "rep": "p12r1c16g4",
+          "members": [
+            "p12r1c16g4"
+          ]
+        },
+        {
+          "rep": "p01r2c07g4",
+          "members": [
+            "p01r2c07g4"
+          ]
+        }
+      ]
+    },
+    "一": {
+      "count": 18,
+      "default": "p02r3c08g7",
+      "clusters": [
+        {
+          "rep": "p02r3c08g7",
+          "members": [
+            "p02r3c08g7",
+            "p09r2c06g2",
+            "p02r1c10g7",
+            "p12r1c20g7",
+            "p10r3c03g3",
+            "p02r3c11g1"
+          ]
+        },
+        {
+          "rep": "p01r3c01g5",
+          "members": [
+            "p01r3c01g5"
+          ]
+        },
+        {
+          "rep": "p01r3c08g1",
+          "members": [
+            "p01r3c08g1"
+          ]
+        },
+        {
+          "rep": "p01r3c16g3",
+          "members": [
+            "p01r3c16g3"
+          ]
+        },
+        {
+          "rep": "p03r1c20g1",
+          "members": [
+            "p03r1c20g1"
+          ]
+        },
+        {
+          "rep": "p01r3c03g1",
+          "members": [
+            "p01r3c03g1"
+          ]
+        },
+        {
+          "rep": "p02r3c05g2",
+          "members": [
+            "p02r3c05g2"
+          ]
+        },
+        {
+          "rep": "p01r3c09g6",
+          "members": [
+            "p01r3c09g6"
+          ]
+        },
+        {
+          "rep": "p02r3c05g6",
+          "members": [
+            "p02r3c05g6"
+          ]
+        },
+        {
+          "rep": "p09r1c09g1",
+          "members": [
+            "p09r1c09g1"
+          ]
+        },
+        {
+          "rep": "p04r1c13g1",
+          "members": [
+            "p04r1c13g1"
+          ]
+        },
+        {
+          "rep": "p01r2c18g6",
+          "members": [
+            "p01r2c18g6"
+          ]
+        },
+        {
+          "rep": "p02r1c06g7",
+          "members": [
+            "p02r1c06g7"
+          ]
+        }
+      ]
+    },
+    "圣": {
+      "count": 17,
+      "default": "p05r3c07g3",
+      "clusters": [
+        {
+          "rep": "p06r1c01g1",
+          "members": [
+            "p06r1c01g1",
+            "p06r1c07g7",
+            "p06r1c03g3",
+            "p06r1c05g5"
+          ]
+        },
+        {
+          "rep": "p05r3c07g3",
+          "members": [
+            "p05r3c07g3",
+            "p05r3c09g5"
+          ]
+        },
+        {
+          "rep": "p05r3c18g6",
+          "members": [
+            "p05r3c18g6",
+            "p05r3c14g2"
+          ]
+        },
+        {
+          "rep": "p01r3c08g6",
+          "members": [
+            "p01r3c08g6"
+          ]
+        },
+        {
+          "rep": "p10r3c09g7",
+          "members": [
+            "p10r3c09g7"
+          ]
+        },
+        {
+          "rep": "p02r3c14g5",
+          "members": [
+            "p02r3c14g5"
+          ]
+        },
+        {
+          "rep": "p03r2c08g2",
+          "members": [
+            "p03r2c08g2"
+          ]
+        },
+        {
+          "rep": "p01r2c11g2",
+          "members": [
+            "p01r2c11g2"
+          ]
+        },
+        {
+          "rep": "p05r3c11g7",
+          "members": [
+            "p05r3c11g7"
+          ]
+        },
+        {
+          "rep": "p07r3c06g6",
+          "members": [
+            "p07r3c06g6"
+          ]
+        },
+        {
+          "rep": "p11r2c13g7",
+          "members": [
+            "p11r2c13g7"
+          ]
+        },
+        {
+          "rep": "p05r3c16g4",
+          "members": [
+            "p05r3c16g4"
+          ]
+        }
+      ]
+    },
+    "众": {
+      "count": 17,
+      "default": "p02r2c19g4",
+      "clusters": [
+        {
+          "rep": "p02r2c19g4",
+          "members": [
+            "p02r1c13g2",
+            "p02r2c06g3",
+            "p02r2c19g4",
+            "p02r1c19g6",
+            "p02r2c03g1"
+          ]
+        },
+        {
+          "rep": "p02r2c09g5",
+          "members": [
+            "p02r2c09g5",
+            "p02r2c16g2"
+          ]
+        },
+        {
+          "rep": "p02r2c12g7",
+          "members": [
+            "p02r2c12g7"
+          ]
+        },
+        {
+          "rep": "p02r3c02g6",
+          "members": [
+            "p02r3c02g6"
+          ]
+        },
+        {
+          "rep": "p02r3c08g4",
+          "members": [
+            "p02r3c08g4"
+          ]
+        },
+        {
+          "rep": "p10r1c07g7",
+          "members": [
+            "p10r1c07g7"
+          ]
+        },
+        {
+          "rep": "p02r1c16g4",
+          "members": [
+            "p02r1c16g4"
+          ]
+        },
+        {
+          "rep": "p08r1c10g3",
+          "members": [
+            "p08r1c10g3"
+          ]
+        },
+        {
+          "rep": "p01r3c05g2",
+          "members": [
+            "p01r3c05g2"
+          ]
+        },
+        {
+          "rep": "p03r1c04g5",
+          "members": [
+            "p03r1c04g5"
+          ]
+        },
+        {
+          "rep": "p01r2c12g5",
+          "members": [
+            "p01r2c12g5"
+          ]
+        },
+        {
+          "rep": "p02r3c17g2",
+          "members": [
+            "p02r3c17g2"
+          ]
+        }
+      ]
+    },
+    "时": {
+      "count": 14,
+      "default": "p02r1c06g6",
+      "clusters": [
+        {
+          "rep": "p02r1c06g6",
+          "members": [
+            "p02r1c06g6",
+            "p11r1c12g5"
+          ]
+        },
+        {
+          "rep": "p11r1c01g3",
+          "members": [
+            "p03r1c09g3",
+            "p11r1c01g3"
+          ]
+        },
+        {
+          "rep": "p02r3c05g3",
+          "members": [
+            "p02r3c05g3",
+            "p09r3c12g4"
+          ]
+        },
+        {
+          "rep": "p02r1c09g7",
+          "members": [
+            "p02r1c09g7",
+            "p10r3c13g7"
+          ]
+        },
+        {
+          "rep": "p01r3c09g5",
+          "members": [
+            "p01r3c09g5"
+          ]
+        },
+        {
+          "rep": "p01r3c09g1",
+          "members": [
+            "p01r3c09g1"
+          ]
+        },
+        {
+          "rep": "p01r2c18g7",
+          "members": [
+            "p01r2c18g7"
+          ]
+        },
+        {
+          "rep": "p06r2c13g3",
+          "members": [
+            "p06r2c13g3"
+          ]
+        },
+        {
+          "rep": "p03r1c06g2",
+          "members": [
+            "p03r1c06g2"
+          ]
+        },
+        {
+          "rep": "p01r3c16g4",
+          "members": [
+            "p01r3c16g4"
+          ]
+        }
+      ]
+    },
+    "宫": {
+      "count": 11,
+      "default": "p10r3c02g3",
+      "clusters": [
+        {
+          "rep": "p10r3c02g3",
+          "members": [
+            "p09r1c14g4",
+            "p10r3c02g3",
+            "p06r2c02g3"
+          ]
+        },
+        {
+          "rep": "p04r2c06g2",
+          "members": [
+            "p04r2c06g2"
+          ]
+        },
+        {
+          "rep": "p11r3c19g8",
+          "members": [
+            "p11r3c19g8"
+          ]
+        },
+        {
+          "rep": "p06r2c16g1",
+          "members": [
+            "p06r2c16g1"
+          ]
+        },
+        {
+          "rep": "p10r1c20g2",
+          "members": [
+            "p10r1c20g2"
+          ]
+        },
+        {
+          "rep": "p03r3c19g7",
+          "members": [
+            "p03r3c19g7"
+          ]
+        },
+        {
+          "rep": "p11r1c04g6",
+          "members": [
+            "p11r1c04g6"
+          ]
+        },
+        {
+          "rep": "p04r2c17g2",
+          "members": [
+            "p04r2c17g2"
+          ]
+        },
+        {
+          "rep": "p04r1c07g1",
+          "members": [
+            "p04r1c07g1"
+          ]
+        }
+      ]
+    },
+    "金": {
+      "count": 11,
+      "default": "p08r2c17g4",
+      "clusters": [
+        {
+          "rep": "p05r2c14g3",
+          "members": [
+            "p05r2c14g3"
+          ]
+        },
+        {
+          "rep": "p10r3c04g3",
+          "members": [
+            "p10r3c04g3"
+          ]
+        },
+        {
+          "rep": "p11r2c14g2",
+          "members": [
+            "p11r2c14g2"
+          ]
+        },
+        {
+          "rep": "p02r1c04g3",
+          "members": [
+            "p02r1c04g3"
+          ]
+        },
+        {
+          "rep": "p09r1c02g1",
+          "members": [
+            "p09r1c02g1"
+          ]
+        },
+        {
+          "rep": "p08r2c11g2",
+          "members": [
+            "p08r2c11g2"
+          ]
+        },
+        {
+          "rep": "p04r1c03g7",
+          "members": [
+            "p04r1c03g7"
+          ]
+        },
+        {
+          "rep": "p12r2c10g7",
+          "members": [
+            "p12r2c10g7"
+          ]
+        },
+        {
+          "rep": "p08r3c04g3",
+          "members": [
+            "p08r3c04g3"
+          ]
+        },
+        {
+          "rep": "p04r1c16g7",
+          "members": [
+            "p04r1c16g7"
+          ]
+        },
+        {
+          "rep": "p08r2c17g4",
+          "members": [
+            "p08r2c17g4"
+          ]
+        }
+      ]
+    },
+    "风": {
+      "count": 5,
+      "default": "p01r2c19g4",
+      "clusters": [
+        {
+          "rep": "p07r2c03g4",
+          "members": [
+            "p07r2c03g4",
+            "p08r3c03g6"
+          ]
+        },
+        {
+          "rep": "p01r2c19g4",
+          "members": [
+            "p01r2c19g4"
+          ]
+        },
+        {
+          "rep": "p09r1c03g7",
+          "members": [
+            "p09r1c03g7"
+          ]
+        },
+        {
+          "rep": "p08r2c12g7",
+          "members": [
+            "p08r2c12g7"
+          ]
+        }
+      ]
+    }
+  }
+}

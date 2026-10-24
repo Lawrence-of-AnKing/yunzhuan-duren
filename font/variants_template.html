@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>云篆字体 · 默认字形与异体</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.5 "Microsoft YaHei",sans-serif;background:#f4f2ee;color:#222}
+#bar{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ccc;padding:8px 14px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+#bar h1{font-size:16px;margin:0}
+#bar input{width:110px;padding:3px 6px;font-size:14px}
+#bar select{font-size:13px}
+#stat{color:#555}
+#save{margin-left:auto;font-size:12px;color:#080}
+#save.err{color:#c00;font-weight:bold}
+#help{background:#fffbe6;border-bottom:1px solid #e6d9a0;padding:6px 14px;font-size:13px;color:#554}
+#help b{color:#a33}
+#list{padding:10px 14px 200px}
+.card{background:#fff;border:1px solid #ddd;border-radius:6px;margin-bottom:10px;padding:8px 10px;display:flex;gap:12px}
+.card.seen .ch{color:#1a8a3a}
+.card.edited{border-color:#e08a00;box-shadow:0 0 0 1px #e08a00}
+.head{width:120px;flex:none;text-align:center}
+.ch{font-size:30px;line-height:1.1}
+.meta{font-size:12px;color:#777}
+.def{width:110px;height:110px;margin:6px auto 0;border:2px solid #c22;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff}
+.def img{max-width:96px;max-height:96px}
+.tools{margin-top:4px;font-size:12px}
+.tools button{font-size:12px;padding:1px 6px}
+.groups{display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;flex:1}
+.g{position:relative;width:64px;height:64px;border:1px solid #ccc;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;background:#fff}
+.g img{max-width:56px;max-height:56px;pointer-events:none}
+.g.isdef{border:2px solid #c22}
+.g.open{outline:3px solid #36c}
+.g.drop{background:#dbe8ff}
+.g .n{position:absolute;right:1px;bottom:0;font-size:11px;color:#fff;background:#36c;border-radius:6px;padding:0 4px;line-height:15px}
+.g .n.one{background:#aaa}
+.members{flex-basis:100%;background:#eef3fb;border:1px dashed #36c;border-radius:4px;padding:6px;display:flex;flex-wrap:wrap;gap:5px}
+.members .cap{flex-basis:100%;font-size:12px;color:#335}
+.m{position:relative;width:58px;height:58px;border:1px solid #bbc;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:3px}
+.m img{max-width:50px;max-height:50px;pointer-events:none}
+.m.rep{border:2px solid #36c}
+.m .x{position:absolute;top:-6px;right:-6px;display:none;width:18px;height:18px;border-radius:9px;background:#c33;color:#fff;font-size:12px;line-height:18px;text-align:center}
+.m:hover .x{display:block}
+#peek{position:fixed;display:none;z-index:20;background:#fff;border:1px solid #888;padding:6px;box-shadow:0 2px 8px #0004;font-size:12px;text-align:center;pointer-events:none}
+#peek img{width:auto;height:auto;max-width:220px;max-height:220px;image-rendering:auto;display:block;margin:0 auto 4px}
+#more{text-align:center;color:#888;padding:20px}
+</style></head><body>
+<div id="bar"><h1>云篆字体 · 默认字形与异体</h1>
+找字 <input id="q" placeholder="输入楷字">
+<select id="flt"><option value="all">全部字</option><option value="multi">只看有异体的</option><option value="unseen">只看未看过的</option><option value="edited">只看改过的</option></select>
+<span id="stat"></span><span id="save"></span></div>
+<div id="help">每张卡片是一个字：左边<b>红框</b>是默认字形（打这个字时显示的样子），右边每个小格是一种写法（几乎一样的已合成一组，右下角数字是组里有几个）。
+<b>单击</b>某组 → 设为默认；<b>点组右下角的数字</b> → 展开组员，单击组员 → 用它当这组的代表，点组员右上角 <b>×</b> → 拆出成单独一组；
+<b>把一组拖到另一组上</b> → 合并（保留目标组的代表）。Ctrl+Z 撤销。卡片在屏幕上停留 1 秒自动记为“已看”（字变绿）；所有改动自动保存。</div>
+<div id="list"></div><div id="more"></div><div id="peek"></div>
+<script>
+const DATA=__DATA__;           // {build, chars:{字:{count,default,clusters:[{rep,members}]}}, info:{id:"位置"}}
+const BUILD=DATA.build;
+const ORIG=JSON.parse(JSON.stringify(DATA.chars));
+let state=JSON.parse(JSON.stringify(DATA.chars)), seen={}, edited={}, undo=[];
+const order=Object.keys(state).sort((a,b)=>state[b].count-state[a].count||a.localeCompare(b));
+const src=id=>`../glyphs/p${id.slice(1,3)}/${id}.png`;
+const $=s=>document.querySelector(s);
+const fromServer=location.protocol.startsWith('http');
+let open={};   // 字 → 展开的组下标
+function card(ch){
+  const s=state[ch], el=document.createElement('div');
+  el.className='card'+(seen[ch]?' seen':'')+(edited[ch]?' edited':''); el.dataset.ch=ch;
+  const di=s.clusters.findIndex(c=>c.rep===s.default);
+  let h=`<div class="head"><div class="ch">${ch}</div><div class="meta">出现 ${s.count} 次 · ${s.clusters.length} 种</div>
+    <div class="def"><img src="${src(s.default)}" data-id="${s.default}"></div>
+    <div class="tools">${edited[ch]?'<button data-act="reset">恢复自动结果</button>':''}</div></div><div class="groups">`;
+  s.clusters.forEach((c,i)=>{
+    h+=`<div class="g${i===di?' isdef':''}${open[ch]===i?' open':''}" draggable="true" data-i="${i}"><img src="${src(c.rep)}" data-id="${c.rep}" loading="lazy">
+      <span class="n${c.members.length===1?' one':''}" data-act="open">${c.members.length}</span></div>`;
+    if(open[ch]===i){
+      h+=`<div class="members"><span class="cap">这一组的 ${c.members.length} 个字形（蓝框是代表；单击换代表，× 拆出）</span>`;
+      c.members.forEach(m=>{h+=`<div class="m${m===c.rep?' rep':''}" data-m="${m}"><img src="${src(m)}" data-id="${m}" loading="lazy">${c.members.length>1?`<span class="x" data-act="split">×</span>`:''}</div>`});
+      h+='</div>';
+    }
+  });
+  el.innerHTML=h+'</div>'; return el;
+}
+function snapshot(ch){undo.push([ch,JSON.stringify(state[ch]),!!edited[ch]]); if(undo.length>300)undo.shift()}
+function changed(ch){edited[ch]=JSON.stringify(state[ch])!==JSON.stringify(ORIG[ch]); if(!edited[ch])delete edited[ch]; seen[ch]=1; redraw(ch); save()}
+function redraw(ch){const old=document.querySelector(`.card[data-ch="${CSS.escape(ch)}"]`); if(old){old.replaceWith(card(ch)); obs.observe(document.querySelector(`.card[data-ch="${CSS.escape(ch)}"]`))} stat()}
+// 列表分批渲染
+let visible=[], shown=0;
+function filter(){
+  const q=$('#q').value.trim(), f=$('#flt').value;
+  visible=order.filter(ch=>(!q||q.includes(ch))&&(f==='all'||(f==='multi'&&state[ch].clusters.length>1)||(f==='unseen'&&!seen[ch])||(f==='edited'&&edited[ch])));
+  $('#list').innerHTML=''; shown=0; more(); stat();
+}
+function more(){const L=$('#list'); visible.slice(shown,shown+40).forEach(ch=>{const c=card(ch);L.appendChild(c);obs.observe(c)}); shown=Math.min(shown+40,visible.length);
+  $('#more').textContent=shown<visible.length?`已显示 ${shown}/${visible.length}，往下滚继续`:`共 ${visible.length} 个字`}
+window.addEventListener('scroll',()=>{if(innerHeight+scrollY>document.body.offsetHeight-600&&shown<visible.length)more()});
+// 停留 1 秒记已看
+const timers=new Map();
+const obs=new IntersectionObserver(es=>es.forEach(e=>{const ch=e.target.dataset.ch;
+  if(e.isIntersecting&&(e.intersectionRatio>0.7||e.intersectionRect.height>0.6*innerHeight)&&!seen[ch]){timers.set(ch,setTimeout(()=>{seen[ch]=1;e.target.classList.add('seen');stat();save()},1000))}
+  else{clearTimeout(timers.get(ch))}}),{threshold:[0,0.2,0.4,0.6,0.7,0.8,1]});
+function stat(){const n=order.length;$('#stat').textContent=`共 ${n} 字 · 已看 ${Object.keys(seen).length} · 改过 ${Object.keys(edited).length}`}
+// 交互
+document.addEventListener('click',e=>{
+  const cd=e.target.closest('.card'); if(!cd)return; const ch=cd.dataset.ch, s=state[ch];
+  const act=e.target.dataset.act;
+  if(act==='reset'){snapshot(ch);state[ch]=JSON.parse(JSON.stringify(ORIG[ch]));delete open[ch];changed(ch);return}
+  if(act==='open'){const i=+e.target.closest('.g').dataset.i; open[ch]=open[ch]===i?undefined:i; seen[ch]=1; redraw(ch); save(); return}
+  if(act==='split'){const m=e.target.closest('.m').dataset.m, gi=open[ch], g=s.clusters[gi]; snapshot(ch);
+    g.members=g.members.filter(x=>x!==m); if(g.rep===m){g.rep=g.members[0]; if(s.default===m)s.default=g.rep}
+    s.clusters.push({rep:m,members:[m]}); changed(ch); return}
+  const g=e.target.closest('.g'); if(g){const c=s.clusters[+g.dataset.i]; if(s.default!==c.rep){snapshot(ch);s.default=c.rep;changed(ch)} return}
+  const m=e.target.closest('.m'); if(m){const c=s.clusters[open[ch]], id=m.dataset.m; if(c.rep!==id){snapshot(ch); if(s.default===c.rep)s.default=id; c.rep=id; changed(ch)} return}
+});
+let drag=null;
+document.addEventListener('dragstart',e=>{const g=e.target.closest('.g');if(!g)return;drag=[g.closest('.card').dataset.ch,+g.dataset.i];e.dataTransfer.effectAllowed='move'});
+document.addEventListener('dragover',e=>{const g=e.target.closest('.g');if(g&&drag&&g.closest('.card').dataset.ch===drag[0]){e.preventDefault();document.querySelectorAll('.g.drop').forEach(x=>x.classList.remove('drop'));g.classList.add('drop')}});
+document.addEventListener('drop',e=>{const g=e.target.closest('.g');document.querySelectorAll('.g.drop').forEach(x=>x.classList.remove('drop'));if(!g||!drag)return;e.preventDefault();
+  const ch=g.closest('.card').dataset.ch, to=+g.dataset.i, from=drag[1]; drag=null; if(ch===undefined||to===from)return;
+  const s=state[ch]; snapshot(ch); const A=s.clusters[from], B=s.clusters[to];
+  B.members=B.members.concat(A.members); if(s.default===A.rep)s.default=B.rep; s.clusters.splice(from,1);
+  s.clusters.sort((x,y)=>y.members.length-x.members.length); delete open[ch]; changed(ch)});
+document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.key==='z'&&document.activeElement.tagName!=='INPUT'){const u=undo.pop();if(!u)return;e.preventDefault();
+  state[u[0]]=JSON.parse(u[1]); if(u[2])edited[u[0]]=true; else delete edited[u[0]]; delete open[u[0]]; redraw(u[0]); save()}});
+// 悬停放大
+const pk=$('#peek');
+document.addEventListener('mouseover',e=>{const im=e.target.querySelector?.(':scope>img[data-id]')||(e.target.matches?.('img[data-id]')?e.target:null);
+  if(!im){pk.style.display='none';return} const id=im.dataset.id; pk.innerHTML=`<img src="${src(id)}"><div>${DATA.info[id]||id}</div>`;
+  const r=e.target.getBoundingClientRect(); pk.style.display='block'; pk.style.left=Math.min(r.right+8,innerWidth-250)+'px'; pk.style.top=Math.max(8,Math.min(r.top,innerHeight-280))+'px'});
+// 保存
+let st=null, saveBlocked=false;
+function payload(){const ch={};for(const k in edited)ch[k]=state[k];return {build:BUILD,choices:ch,seen,time:new Date().toISOString()}}
+function save(){if(location.hash==='#selftest'||location.hash==='#shot')return; localStorage.setItem('yzfont_'+BUILD,JSON.stringify(payload())); if(!fromServer||saveBlocked)return; clearTimeout(st); st=setTimeout(async()=>{
+  try{const r=await fetch('/savefont',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload())});const j=await r.json();
+    if(!j.ok)throw j.error; $('#save').className='';$('#save').textContent='已自动保存 '+new Date().toLocaleTimeString()}
+  catch(err){$('#save').className='err';$('#save').textContent='保存失败：'+err}},400)}
+function apply(d){if(!d||d.build!==BUILD)return false; for(const k in (d.choices||{}))if(state[k]){state[k]=d.choices[k];edited[k]=true} seen=d.seen||{}; return true}
+(async()=>{
+  if(fromServer){try{const response=await fetch('/fontchoices');if(!response.ok)throw new Error('读取选择失败');const d=await response.json();if(d.build&&d.build!==BUILD)throw new Error('旧选择与页面版本不一致，已禁止覆盖');apply(d)}catch(e){saveBlocked=true;$('#save').className='err';$('#save').textContent=e.message}}
+  else{apply(JSON.parse(localStorage.getItem('yzfont_'+BUILD)||'null')); $('#save').className='err'; $('#save').textContent='直接打开的文件：改动只存在浏览器里，请从复核服务打开'}
+  filter();
+  if(location.hash==='#selftest')selftest();
+})();
+$('#q').addEventListener('input',filter); $('#flt').addEventListener('change',filter);
+function selftest(){
+  const out=[]; const ch=order[0], s=state[ch];
+  const g0=s.clusters[0].rep, g1=s.clusters[1].rep;
+  document.querySelector(`.card[data-ch="${ch}"] .g[data-i="1"]`).click(); out.push('setdef '+(state[ch].default===g1));
+  document.querySelector(`.card[data-ch="${ch}"] .g[data-i="0"] .n`).click();
+  const n0=state[ch].clusters[0].members.length;
+  if(n0>1){document.querySelector(`.card[data-ch="${ch}"] .m:nth-of-type(2) .x`)?.click(); out.push('split '+(state[ch].clusters.length===ORIG[ch].clusters.length+1))}
+  document.dispatchEvent(new KeyboardEvent('keydown',{key:'z',ctrlKey:true}));
+  document.dispatchEvent(new KeyboardEvent('keydown',{key:'z',ctrlKey:true}));
+  out.push('undo '+(JSON.stringify(state[ch])===JSON.stringify(ORIG[ch])));
+  out.push('edited '+Object.keys(edited).length+' cards '+document.querySelectorAll('.card').length);
+  const p=document.createElement('pre');p.id='selftest';p.textContent=out.join('\n');document.body.appendChild(p);
+}
+</script></body></html>

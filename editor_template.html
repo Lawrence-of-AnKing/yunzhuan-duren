@@ -1,0 +1,297 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>云篆修正 · 第__PG__页</title>
+<style>
+body{font-family:"LXGW WenKai","Microsoft YaHei",sans-serif;margin:0;background:#f6f3ec;color:#222}
+.top{position:sticky;top:0;z-index:9;background:#f6f3ec;border-bottom:1px solid #ddd5c4;padding:8px 14px}
+.nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:13px;margin-bottom:4px}
+.nav a{padding:2px 8px;border:1px solid #cfc5b0;border-radius:4px;background:#fff;color:#333;text-decoration:none;cursor:pointer}
+.nav a.cur{background:#333;color:#fff;border-color:#333}.nav a.off{opacity:.35;pointer-events:none}
+.nav .navtip{color:#888;font-size:12px;margin-left:6px}
+h1{font-size:18px;margin:0 0 4px}
+.hint{font-size:13px;color:#555;line-height:1.75}
+.hint b{color:#222} kbd{border:1px solid #bbb;border-radius:3px;padding:0 4px;background:#fff;font-size:12px}
+.tools{margin-top:4px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button{font:inherit;font-size:13px;padding:3px 10px;cursor:pointer}
+button.on{background:#333;color:#fff}
+.reg{padding:10px 14px 4px}.reg h3{margin:0 0 6px;font-size:14px;color:#666}
+.row{display:flex;flex-direction:row;gap:8px;overflow-x:auto;padding-bottom:10px}
+.card{flex:none;background:#fff;border:1px solid #e0d8c8;border-radius:5px;padding:3px;display:flex;gap:2px}
+.card.dirty{border-color:#3a6fd8;box-shadow:0 0 0 1px #3a6fd8}
+.card.cur{outline:3px solid #ff8c00;outline-offset:2px}
+.card.seen .no{background:#2e9e5b;color:#fff;border-radius:3px}
+.card .lft{position:relative}
+.cbox{position:absolute;left:-2px;right:-2px;border:3px solid #ff8c00;border-radius:4px;pointer-events:none;box-shadow:0 0 0 1px #fff}
+.lab.cur .ch{background:#ff8c00;color:#fff;border-radius:3px}
+#save{font-size:13px;padding:2px 8px;border-radius:4px}
+#save.ok{background:#e3f4e8;color:#1d6b38}#save.err{background:#fde5e5;color:#b42020}
+.card .no{font-size:11px;color:#999;text-align:center}
+canvas{image-rendering:pixelated;display:block}
+.card canvas{cursor:zoom-in}
+.labs{position:relative;width:40px}
+.lab{position:absolute;left:0;width:40px;text-align:center}
+.lab .ch{font-size:19px;font-weight:bold;line-height:1;color:#222}
+.lab .ch.guess{color:#c27a00}.lab .ch.fixed{color:#1a4fb0}
+.lab .warn{font-size:11px;color:#d33}
+.chip{font-size:12px;border-radius:3px;padding:1px 5px;cursor:pointer;border:1px solid transparent;color:#fff;user-select:none}
+.chip.sel{outline:3px solid #000;outline-offset:1px}
+details{padding:4px 14px}
+#modal{display:none;position:fixed;inset:0;background:rgba(30,25,20,.72);z-index:50;align-items:stretch;justify-content:center}
+#mbox{background:#f6f3ec;margin:10px;border-radius:6px;display:flex;flex-direction:column;max-width:97vw}
+#mhead{padding:7px 12px;border-bottom:1px solid #ddd5c4;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
+#mhead b{font-size:15px}
+#mtools{padding:6px 12px;border-bottom:1px solid #ddd5c4;font-size:13px;display:flex;flex-direction:column;gap:5px}
+#mtools .line{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.step{font-weight:bold;color:#7a4b00}
+#mchips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#mchips .grp{display:flex;align-items:center;gap:3px;padding:1px 4px;border-radius:4px;background:#fff;border:1px solid #e3dccd}
+#mchips .grp .lb{cursor:pointer;font-weight:bold}
+#mbody{overflow:auto;padding:10px 16px;flex:1;position:relative}
+#toast{position:fixed;left:50%;top:70px;transform:translateX(-50%);background:#333;color:#fff;padding:8px 16px;border-radius:6px;font-size:14px;z-index:99;display:none;max-width:70vw}
+</style></head><body>
+<div class="top"><div class="nav"><a href="index.html">☰ 总目录</a><a id="pprev">◀ 上一页</a><span id="plinks"></span><a id="pnext">下一页 ▶</a><span class="navtip">翻页前修改已自动保存；快捷键 Alt+← / Alt+→</span></div>
+<h1>云篆度人妙经 · 第 __PG__ 页 · 笔画修正</h1>
+<div class="hint">
+颜色：<b style="color:#d62020">红</b>=小楷，蓝/绿/紫/青=各个云篆（相邻字颜色不同），<b style="color:#999">灰</b>=不属于任何字，<b style="color:#ff6e00">橙（带浅橙圈）</b>=程序没归属的碎笔（扫描里偏淡或残缺的点、横）：是缺的笔画就刷给对应的字，是污点就不用管，不归属不会导出。右边是释文，<span style="color:#d33">⚠</span> 是程序觉得可疑的字。<br>
+<b>点某列任意位置</b>，打开这一列的大图并定位到点击处；所有修改都在大图里做。<b style="color:#3a6fd8">蓝边框</b>=改过的列；<b style="color:#2e9e5b">绿色列名</b>=已看过的列；<b style="color:#ff8c00">橙色框</b>=上次看到的字（关大图后停在那里）。
+<span id="savehint"></span>
+</div>
+<div class="tools">
+<button id="showOrig">总览显示原图黑白</button>
+<button id="nextFlag">打开第一个疑点</button>
+<button id="export">导出修正文件</button>
+<button id="reset">放弃全部修改</button>
+<span id="stat"></span><span id="save"></span></div></div>
+<details><summary>展开原书第 __PG__ 页对照</summary><img src="data:image/png;base64,__PAGE__" style="max-width:900px"></details>
+<div id="main"></div>
+<div id="toast"></div>
+<div id="modal"><div id="mbox">
+<div id="mhead"><b id="mtitle"></b>
+<button id="mprev" title="快捷键 ←">◀ 左边一列</button><button id="mnext" title="快捷键 →">右边一列 ▶</button>
+<button id="mflag">下一个疑点 (F)</button>
+<button id="mout">－</button><span id="mzoom"></span><button id="min">＋</button>
+<label><input type="checkbox" id="mfocus" checked> 只给选中的字着色</label>
+<label title="打开某列时自动勾上；取消勾选可把这列标回“未看”"><input type="checkbox" id="mseen"> 本列已看</label>
+<button id="mundo">撤销 (Ctrl+Z)</button>
+<button id="mclose" style="margin-left:auto">关闭 (Esc)</button></div>
+<div id="mtools">
+<div class="line"><span class="step">改归属：</span>① 先点下面某个字的 <span class="chip" style="background:#3a7bd5">云</span> 或 <span class="chip" style="background:#d62020">楷</span>（选中后有黑框），意思是“要把笔画归给它”；② 再在图上点笔画，点一下就归过去。
+<button id="mnone">或：点笔画设为“不属于任何字”</button></div>
+<div class="line"><span class="step">两字粘连：</span><button id="mknife">刀 (K)</button> 打开刀后，在粘连处<b>按住鼠标拖一条线</b>再松开，这一笔就在线处断成两段（留一道白色切口）；然后再用“改归属”把其中一段归给正确的字。点字名可改释文。</div>
+<div class="line" id="mchips"></div>
+</div>
+<div style="padding:3px 12px;font-size:12px;color:#555;line-height:1.6">拖动<b style="color:#ff8c00">橙色竖线</b>：线左侧=着色叠在原图上，线右侧=只看原图。原图向外加粗了一圈（这圈黑边只是对照用，不是笔画；导出时取着色部分，并自动带上扫描原图笔画边缘的那圈淡灰），着色笔画外应只露出一圈均匀黑边；露出<b>整段黑色</b>的笔画不属于该字。浅黄底是本列范围，两侧是相邻列的原图（只供参照，不能编辑）。</div>
+<div id="mbody"><canvas id="mcv"></canvas></div>
+</div></div>
+<script>
+const PG=__PG__, SCALE=1.6, COLS=__DATA__, MARG=__M__;
+const KAI=[214,32,32], NONE=[175,175,175], FAINT=[255,110,0], FAINT_RING=[255,205,150], YZ=[[58,123,213],[30,150,70],[150,60,200],[0,150,160]];
+const BUILD='__BUILD__', LS='yz-edit-p'+PG+'-'+BUILD, LSV=LS+'-view';   // 每次重新生成网页都换新的存储键，旧修改不会串到新数据上
+const SERVER=location.protocol.startsWith('http');
+let saved=JSON.parse(localStorage.getItem(LS)||'{}');
+let view=JSON.parse(localStorage.getItem(LSV)||'{"seen":{},"cur":null}');
+let brush=undefined, brush_k=null, knife=false, showOrig=false, lastCol=null;
+const st={};
+
+function toast(t,ms){const e=document.getElementById('toast');e.textContent=t;e.style.display='block';clearTimeout(e._t);e._t=setTimeout(()=>e.style.display='none',ms||2500)}
+function loadImg(src){return new Promise(r=>{const im=new Image();im.onload=()=>r(im);im.src='data:image/png;base64,'+src})}
+async function decode(c){const im=await loadImg(c.png);const cv=document.createElement('canvas');cv.width=c.W;cv.height=c.H;const x=cv.getContext('2d');x.drawImage(im,0,0);const d=x.getImageData(0,0,c.W,c.H).data;const P=new Int32Array(c.W*c.H);for(let i=0;i<P.length;i++)P[i]=d[4*i]+256*d[4*i+1];return P}
+async function decodeCtx(c){const im=await loadImg(c.ctx);const W=c.W+2*MARG;const cv=document.createElement('canvas');cv.width=W;cv.height=c.H;const x=cv.getContext('2d');x.drawImage(im,0,0);const d=x.getImageData(0,0,W,c.H).data;const A=new Uint8Array(W*c.H);for(let i=0;i<A.length;i++)A[i]=d[4*i]>127?1:0;return A}
+function initState(c,P0){return {P:Int32Array.from(P0),owner:Object.fromEntries(Object.entries(c.owner).map(([k,v])=>[+k,v])),labels:Object.fromEntries(c.cells.map(x=>[x.cid,x.label])),fixed:{},cuts:[]}}
+function cellIndex(c){const m={};c.cells.forEach((x,i)=>m[x.cid]=i);return m}
+function isFaint(o){return !!(o&&o[1]==='faint')}
+function colorOf(c,o){if(!o)return NONE;if(o[1]==='faint')return FAINT;if(o[1]==='kai')return KAI;const i=cellIndex(c)[o[0]];return i===undefined?NONE:YZ[i%4]}
+function chipColor(c,cid){return 'rgb('+YZ[cellIndex(c)[cid]%4].join(',')+')'}
+
+function draw(k){const c=COLS[k],s=st[k];const cv=s.cv,x=cv.getContext('2d');const img=x.createImageData(c.W,c.H);const cache={};const fz=[];
+ for(let i=0;i<s.P.length;i++){const p=s.P[i];let col;if(p===0){col=[255,255,255]}else if(showOrig){col=[0,0,0]}else{col=cache[p]||(cache[p]=colorOf(c,s.owner[p]));if(isFaint(s.owner[p]))fz.push(i)}
+  img.data.set([col[0],col[1],col[2],255],4*i)}
+ // 未归属碎笔（橙）外面加一圈浅橙，总览里也看得见
+ for(const i of fz){const y=Math.floor(i/c.W),xx=i%c.W;for(let a=-2;a<=2;a++)for(let b=-2;b<=2;b++){const X=xx+b,Y=y+a;if(X<0||Y<0||X>=c.W||Y>=c.H)continue;const j=Y*c.W+X;if(!s.P[j])img.data.set([FAINT_RING[0],FAINT_RING[1],FAINT_RING[2],255],4*j)}}
+ const off=document.createElement('canvas');off.width=c.W;off.height=c.H;off.getContext('2d').putImageData(img,0,0);
+ x.imageSmoothingEnabled=false;x.clearRect(0,0,cv.width,cv.height);x.drawImage(off,0,0,cv.width,cv.height);
+ s.card.classList.toggle('dirty',(s.ops||[]).length>0)}
+
+function pieceAt(k,x,y){const c=COLS[k],s=st[k];let best=0,bd=99;for(let dy=-4;dy<=4;dy++)for(let dx=-4;dx<=4;dx++){const X=x+dx,Y=y+dy;if(X<0||Y<0||X>=c.W||Y>=c.H)continue;const p=s.P[Y*c.W+X];if(p&&dx*dx+dy*dy<bd){bd=dx*dx+dy*dy;best=p}}return best}
+function linePixels(c,x0,y0,x1,y1){const set=new Set();let dx=Math.abs(x1-x0),dy=-Math.abs(y1-y0),sx=x0<x1?1:-1,sy=y0<y1?1:-1,e=dx+dy,x=x0,y=y0;
+ while(true){for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){const X=x+a,Y=y+b;if(X>=0&&Y>=0&&X<c.W&&Y<c.H)set.add(Y*c.W+X)}if(x===x1&&y===y1)break;const e2=2*e;if(e2>=dy){e+=dy;x+=sx}if(e2<=dx){e+=dx;y+=sy}}return set}
+function applyCut(k,op){const c=COLS[k],s=st[k],W=c.W;const L=linePixels(c,op.x0,op.y0,op.x1,op.y1);let made=0;
+ const hit=new Set();L.forEach(i=>{if(s.P[i])hit.add(s.P[i])});let nid=0;for(const p of s.P)if(p>nid)nid=p;nid++;
+ for(const p of hit){const idx=[];for(let i=0;i<s.P.length;i++)if(s.P[i]===p&&!L.has(i))idx.push(i);
+  const lab=new Map();const comps=[];for(const i of idx){if(lab.has(i))continue;const q=[i];lab.set(i,comps.length);const mem=[i];
+   while(q.length){const j=q.pop();const y=Math.floor(j/W),x=j%W;for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){const X=x+b,Y=y+a;if(X<0||Y<0||X>=W||Y>=c.H)continue;const n=Y*W+X;if(s.P[n]===p&&!L.has(n)&&!lab.has(n)){lab.set(n,comps.length);q.push(n);mem.push(n)}}}comps.push(mem)}
+  if(comps.length<=1)continue;made++;let big=0;comps.forEach((m,i)=>{if(m.length>comps[big].length)big=i});
+  comps.forEach((m,i)=>{if(i===big)return;for(const j of m)s.P[j]=nid;s.owner[nid]=s.owner[p];nid++});
+  L.forEach(i=>{if(s.P[i]!==p)return;const y=Math.floor(i/W),x=i%W;const cnt={};for(let a=-2;a<=2;a++)for(let b=-2;b<=2;b++){const X=x+b,Y=y+a;if(X<0||Y<0||X>=W||Y>=c.H)continue;const n=Y*W+X;if(!L.has(n)&&s.P[n])cnt[s.P[n]]=(cnt[s.P[n]]||0)+1}
+   let bp=p,bc=-1;for(const q in cnt)if(cnt[q]>bc){bc=cnt[q];bp=+q}s.P[i]=bp})}
+ s.cuts.push(op);return made}
+function applyOp(k,op){const s=st[k];if(op.t==='own'){const p=s.P[op.y*COLS[k].W+op.x];if(p)s.owner[p]=op.o}else if(op.t==='cut')return applyCut(k,op);else if(op.t==='label'){s.labels[op.cid]=op.ch;s.fixed[op.cid]=1}}
+function replay(k){const s=st[k];const fresh=initState(COLS[k],s.P0);Object.assign(s,fresh);for(const op of s.ops)applyOp(k,op);renderLabels(k);redraw(k)}
+function push(k,op){const s=st[k];s.ops.push(op);const r=applyOp(k,op);lastCol=k;saved[COLS[k].key]=s.ops;localStorage.setItem(LS,JSON.stringify(saved));if(op.t==='label')renderLabels(k);redraw(k);stat();autosave();return r}
+// ===== 已看标记 / 位置框 / 自动保存 =====
+function saveView(){localStorage.setItem(LSV,JSON.stringify(view));autosave()}
+function markSeen(k,v){const key=COLS[k].key;if(v)view.seen[key]=1;else delete view.seen[key];st[k].card.classList.toggle('seen',!!v);stat()}
+function cellAtY(c,y){return c.cells.find(x=>y<=x.y+22)||c.cells[c.cells.length-1]}   // 每格范围：上一格小楷下沿 ~ 本格小楷下沿
+function setCur(k,cid,scroll){view.cur={key:COLS[k].key,cid};for(const j in st)st[j].card.classList.toggle('cur',+j===k);drawCur(scroll);saveView()}
+function drawCur(scroll){document.querySelectorAll('.cbox').forEach(e=>e.remove());document.querySelectorAll('.lab.cur').forEach(e=>e.classList.remove('cur'));
+ if(!view.cur)return;const k=COLS.findIndex(c=>c.key===view.cur.key);if(k<0||!st[k])return;const c=COLS[k],s=st[k];const i=c.cells.findIndex(x=>x.cid===view.cur.cid);if(i<0)return;
+ const top=i>0?(c.cells[i-1].y+22):0, bot=Math.min(c.H,c.cells[i].y+22);const b=document.createElement('div');b.className='cbox';b.style.top=(16+top*SCALE)+'px';b.style.height=((bot-top)*SCALE)+'px';s.lft.appendChild(b);
+ const lab=s.labs.children[i];if(lab)lab.classList.add('cur');s.card.classList.add('cur');
+ if(scroll)b.scrollIntoView({block:'center',inline:'center',behavior:'smooth'})}
+function exportData(){const out={page:PG,build:BUILD,columns:{},seen:view.seen,cur:view.cur,ops:{}};
+ for(const k in st){const s=st[k],c=COLS[k];if(!s.ops.length)continue;out.ops[c.key]=s.ops;
+  const cv=document.createElement('canvas');cv.width=c.W;cv.height=c.H;const x=cv.getContext('2d');const img=x.createImageData(c.W,c.H);
+  for(let i=0;i<s.P.length;i++){img.data[4*i]=s.P[i]&255;img.data[4*i+1]=s.P[i]>>8;img.data[4*i+2]=0;img.data[4*i+3]=255}x.putImageData(img,0,0);
+  out.columns[c.key]={ops:s.ops,P:cv.toDataURL('image/png'),owner:s.owner,labels:s.labels}}
+ return out}
+let saveTimer=null, saveBlocked=false;
+function setSave(t,cls){const e=document.getElementById('save');e.textContent=t;e.className=cls||''}
+function autosave(){if(!SERVER||saveBlocked||location.hash==='#selftest'||location.hash==='#shot')return;clearTimeout(saveTimer);setSave('保存中…');saveTimer=setTimeout(async()=>{
+ try{const r=await fetch('/save/'+PG,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(exportData())});const j=await r.json();
+  if(!j.ok)throw new Error(j.error||'失败');setSave('已自动保存 '+new Date().toLocaleTimeString(),'ok')}
+ catch(err){setSave('自动保存失败：'+err.message+'（修改仍在浏览器里，可点“导出修正文件”）','err')}},600)}
+async function loadServer(){if(!SERVER)return;try{const r=await fetch('/edits/yunzhuan_p'+String(PG).padStart(2,'0')+'_edits.json?'+Date.now());if(r.status===404)return;if(!r.ok)throw new Error('修订服务读取失败');const j=await r.json();
+ if(j.build!==BUILD){saveBlocked=true;setSave('旧修订与当前页面版本不同：已禁止覆盖，请先导入或归档旧修订','err');return}saved=j.ops||{};view={seen:j.seen||{},cur:j.cur||null};localStorage.setItem(LS,JSON.stringify(saved));localStorage.setItem(LSV,JSON.stringify(view))}catch(e){saveBlocked=true;setSave('读取修订失败，已禁止自动保存：'+e.message,'err')}}
+
+function setBrush(b,k){brush=b;brush_k=k;setKnife(false,true);
+ if(b===null)toast('现在点图上的笔画，会把它设为“不属于任何字”（灰色）');
+ else{const c=COLS[k];const i=cellIndex(c)[b[0]];toast('已选：第'+(i+1)+'字「'+st[k].labels[b[0]]+'」的'+(b[1]==='kai'?'小楷':'云篆')+'。现在点图上的笔画，就会归给它',1800)}
+ if(modalK!==null){drawModal();
+  if(b&&k===modalK){const cl=COLS[k].cells.find(x=>x.cid===b[0]);const mb=document.getElementById('mbody');if(cl)mb.scrollTop=Math.max(0,cl.y*MZ-mb.clientHeight/2)}}}
+function setKnife(v,quiet){knife=v;document.getElementById('mknife').classList.toggle('on',knife);document.getElementById('mcv').style.cursor=knife?'crosshair':'pointer';if(knife&&!quiet)toast('刀已打开：在粘连处按住鼠标拖一条线，松开即切开',2200)}
+
+function renderLabels(k){const c=COLS[k],s=st[k];const box=s.labs;box.innerHTML='';
+ c.cells.forEach((x,i)=>{const d=document.createElement('div');d.className='lab';d.style.top=(x.y*SCALE-12)+'px';
+  d.innerHTML='<div class="ch '+(s.fixed[x.cid]?'fixed':x.status==='guess'?'guess':'')+'">'+s.labels[x.cid]+'</div>'+(x.qa.length?'<div class="warn" title="'+x.qa.join('、')+'">⚠</div>':'');
+  box.appendChild(d)})}
+function stat(){let n=0,ops=0;for(const k in st){if(st[k].ops.length){n++;ops+=st[k].ops.length}}let nf=0;for(const k in st){for(const p in st[k].owner)if(isFaint(st[k].owner[p]))nf++}
+ document.getElementById('stat').textContent='已看 '+Object.keys(view.seen).length+'/'+COLS.length+' 列；已改 '+n+' 列，'+ops+' 步；未归属碎笔 '+nf+' 处'}
+
+// ===== 大图 =====
+let modalK=null,MZ=5,divX=0.6,draggingDiv=false,dragCut=null;const LABW=70;
+function halo(k){const s=st[k];if(s.halo)return s.halo;const c=COLS[k],W=c.W+2*MARG,H=c.H,R=2;const h=new Uint8Array(W*H);
+ for(let y=0;y<H;y++)for(let x=0;x<W;x++){if(!s.ctx[y*W+x])continue;for(let a=-R;a<=R;a++)for(let b=-R;b<=R;b++){if(a*a+b*b>R*R+1)continue;const X=x+b,Y=y+a;if(X>=0&&Y>=0&&X<W&&Y<H)h[Y*W+X]=1}}
+ return s.halo=h}
+function drawModal(){if(modalK===null)return;const k=modalK,c=COLS[k],s=st[k],Z=MZ;const cv=document.getElementById('mcv');
+ const CW=c.W+2*MARG,W=CW*Z,H=c.H*Z,OX=MARG*Z;if(cv.width!==W+LABW||cv.height!==H){cv.width=W+LABW;cv.height=H}
+ const x=cv.getContext('2d');x.imageSmoothingEnabled=false;x.fillStyle='#fff';x.fillRect(0,0,cv.width,cv.height);
+ x.fillStyle='#fbf3d4';x.fillRect(OX,0,c.W*Z,H);
+ const h=halo(k);const bi=new ImageData(CW,c.H);for(let i=0;i<h.length;i++)if(h[i]){bi.data[4*i]=25;bi.data[4*i+1]=25;bi.data[4*i+2]=25;bi.data[4*i+3]=255}
+ const ti=new ImageData(c.W,c.H);const cache={};const fc=(document.getElementById('mfocus').checked&&brush)?brush[0]:null;
+ for(let i=0;i<s.P.length;i++){const p=s.P[i];if(!p)continue;const o=s.owner[p];
+  if(p===s.hover){ti.data.set([255,190,0,255],4*i);continue}
+  if(o&&(fc===null||o[0]===fc||isFaint(o))){const col=cache[p]||(cache[p]=colorOf(c,o));ti.data.set([col[0],col[1],col[2],255],4*i)}
+  else if(!o&&fc===null){ti.data.set([175,175,175,255],4*i)}}
+ const ob=document.createElement('canvas');ob.width=CW;ob.height=c.H;ob.getContext('2d').putImageData(bi,0,0);
+ const ot=document.createElement('canvas');ot.width=c.W;ot.height=c.H;ot.getContext('2d').putImageData(ti,0,0);
+ x.drawImage(ob,0,0,W,H);
+ const dx=Math.round(divX*W);
+ x.save();x.beginPath();x.rect(0,0,dx,H);x.clip();x.drawImage(ot,OX,0,c.W*Z,H);
+ x.strokeStyle='#fff';x.lineWidth=Math.max(2,Z*0.6);for(const op of s.cuts){x.beginPath();x.moveTo(OX+(op.x0+.5)*Z,(op.y0+.5)*Z);x.lineTo(OX+(op.x1+.5)*Z,(op.y1+.5)*Z);x.stroke()}
+ x.restore();
+ if(dragCut){x.strokeStyle='#000';x.lineWidth=2;x.setLineDash([6,4]);x.beginPath();x.moveTo(OX+dragCut[0]*Z,dragCut[1]*Z);x.lineTo(OX+dragCut[2]*Z,dragCut[3]*Z);x.stroke();x.setLineDash([])}
+ x.fillStyle='#ff8c00';x.fillRect(dx-1,0,3,H);
+ for(let yy=40;yy<H;yy+=400){x.beginPath();x.arc(dx+0.5,yy,9,0,7);x.fill();x.fillStyle='#fff';x.font='bold 11px sans-serif';x.fillText('⇔',dx-5,yy+4);x.fillStyle='#ff8c00'}
+ x.fillStyle='#f6f3ec';x.fillRect(W,0,LABW,H);
+ c.cells.forEach((cl,i)=>{x.fillStyle=s.fixed[cl.cid]?'#1a4fb0':cl.status==='guess'?'#c27a00':'#222';x.font='bold 30px "LXGW WenKai","Microsoft YaHei"';x.fillText(s.labels[cl.cid],W+10,cl.y*Z+10);
+  x.fillStyle='#888';x.font='12px sans-serif';x.fillText(String(i+1),W+46,cl.y*Z+12);if(cl.qa.length){x.fillStyle='#d33';x.fillText('⚠'+cl.qa.join(' '),W+4,cl.y*Z+30)}});
+ document.getElementById('mtitle').textContent=c.key.slice(3)+'（第'+(k+1)+'/'+COLS.length+'列）';
+ document.getElementById('mzoom').textContent=Z+'×';renderModalChips()}
+function openModal(k,y){modalK=k;lastCol=k;document.getElementById('modal').style.display='flex';drawModal();const mb=document.getElementById('mbody');mb.scrollTop=y===undefined?0:Math.max(0,y*MZ-mb.clientHeight/2);
+ markSeen(k,true);document.getElementById('mseen').checked=true;saveView()}
+function closeModal(){if(modalK===null)return;const k=modalK,mb=document.getElementById('mbody');const yc=(mb.scrollTop+mb.clientHeight/2)/MZ;
+ modalK=null;setKnife(false,true);document.getElementById('modal').style.display='none';setCur(k,cellAtY(COLS[k],yc).cid,true)}
+function stepModal(d){const k=modalK+d;if(k<0||k>=COLS.length)return;if(brush&&brush_k!==k)brush=undefined;openModal(k)}
+function flagList(){const L=[];COLS.forEach((c,k)=>c.cells.forEach(cl=>{if(cl.qa.length)L.push([k,cl.y])}));return L}
+function nextFlag(){const L=flagList();if(!L.length){toast('本页没有疑点');return}
+ const mb=document.getElementById('mbody');const cur=modalK===null?[-1,-1]:[modalK,(mb.scrollTop+mb.clientHeight/2)/MZ];
+ const n=L.find(([k,y])=>k>cur[0]||(k===cur[0]&&y>cur[1]+5))||L[0];openModal(n[0],n[1])}
+function mpos(e){const cv=document.getElementById('mcv');const r=cv.getBoundingClientRect();const sx=cv.width/r.width;return [Math.floor(((e.clientX-r.left)*sx-MARG*MZ)/MZ),Math.floor(((e.clientY-r.top)*sx)/MZ),(e.clientX-r.left)*sx]}
+function initModal(){const cv=document.getElementById('mcv');
+ const nearDiv=px=>Math.abs(px-divX*(COLS[modalK].W+2*MARG)*MZ)<10;
+ cv.addEventListener('mousedown',e=>{const k=modalK,s=st[k],c=COLS[k];const [x,y,px]=mpos(e);
+  if(nearDiv(px)){draggingDiv=true;return}
+  if(knife){dragCut=[x,y,x,y];return}
+  const p=pieceAt(k,x,y);if(!p)return;
+  if(brush===undefined){const o=s.owner[p];if(isFaint(o)){toast('这是程序没归属的碎笔（橙色）：扫描里偏淡或残缺的点、横。是哪个字缺的笔画，就先选那个字的“云/楷”再点它；是污点就不用管（不归属就不会导出）',4500);return}toast(o?('这一笔现在属于：第'+(cellIndex(c)[o[0]]+1)+'字「'+s.labels[o[0]]+'」的'+(o[1]==='kai'?'小楷':'云篆')+'。要改归属，先在上方选目标字的“云/楷”'):'这一笔不属于任何字。要改归属，先在上方选目标字的“云/楷”',3000);return}
+  let qx=x,qy=y;if(s.P[qy*c.W+qx]!==p){outer:for(let r=1;r<=4;r++)for(let a=-r;a<=r;a++)for(let b=-r;b<=r;b++){if(s.P[(y+a)*c.W+x+b]===p){qx=x+b;qy=y+a;break outer}}}
+  push(k,{t:'own',x:qx,y:qy,o:brush})});
+ window.addEventListener('mousemove',e=>{if(modalK===null)return;const [x,y,px]=mpos(e);
+  if(draggingDiv){divX=Math.max(0,Math.min(1,px/((COLS[modalK].W+2*MARG)*MZ)));drawModal();return}
+  if(dragCut){dragCut[2]=x;dragCut[3]=y;drawModal();return}
+  if(e.target!==cv)return;cv.style.cursor=nearDiv(px)?'ew-resize':(knife?'crosshair':'pointer');
+  const s=st[modalK];const p=knife?0:pieceAt(modalK,x,y);if(p!==s.hover){s.hover=p;drawModal()}});
+ window.addEventListener('mouseup',()=>{draggingDiv=false;if(!dragCut||modalK===null)return;const [x0,y0,x1,y1]=dragCut;dragCut=null;
+  if(Math.abs(x1-x0)+Math.abs(y1-y0)<3){drawModal();toast('线太短：请按住鼠标拖出一条穿过笔画的线');return}
+  const made=push(modalK,{t:'cut',x0,y0,x1,y1});toast(made?('已切开 '+made+' 处。现在选目标字的“云/楷”，再点切下来的那一段'):'这条线没有把任何笔画分成两段，请画得更长、完整穿过笔画',3000)});
+ cv.addEventListener('mouseleave',()=>{if(modalK!==null){st[modalK].hover=0;drawModal()}});
+ document.getElementById('mclose').onclick=closeModal;
+ document.getElementById('mprev').onclick=()=>stepModal(1);
+ document.getElementById('mnext').onclick=()=>stepModal(-1);
+ document.getElementById('mflag').onclick=nextFlag;
+ document.getElementById('min').onclick=()=>{MZ=Math.min(10,MZ+1);drawModal()};
+ document.getElementById('mout').onclick=()=>{MZ=Math.max(2,MZ-1);drawModal()};
+ document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+ document.getElementById('mknife').onclick=()=>setKnife(!knife);
+ document.getElementById('mnone').onclick=()=>setBrush(null,modalK);
+ document.getElementById('mundo').onclick=()=>undo();
+ document.getElementById('mfocus').onchange=()=>drawModal();
+ document.getElementById('mseen').onchange=e=>{if(modalK!==null){markSeen(modalK,e.target.checked);saveView()}};
+ document.addEventListener('keydown',e=>{if(modalK===null)return;if(e.key==='Escape')closeModal();if(e.key==='k'||e.key==='K')setKnife(!knife);if(e.key==='f'||e.key==='F')nextFlag();
+  if(e.key==='ArrowLeft'){stepModal(1);e.preventDefault()}if(e.key==='ArrowRight'){stepModal(-1);e.preventDefault()}})}
+function renderModalChips(){if(modalK===null)return;const k=modalK,c=COLS[k],s=st[k];const box=document.getElementById('mchips');box.innerHTML='<span class="step">选目标字：</span>';
+ c.cells.forEach((x,i)=>{const g=document.createElement('span');g.className='grp';
+  const lb=document.createElement('span');lb.className='lb';lb.textContent=(i+1)+' '+s.labels[x.cid];lb.title='点击修改释文';
+  lb.onclick=()=>{const v=prompt(c.key.slice(3)+' 第'+(i+1)+'字，释文改为：',s.labels[x.cid]);if(v&&v.trim()&&v.trim()!==s.labels[x.cid]){push(k,{t:'label',cid:x.cid,ch:v.trim()});drawModal()}};g.appendChild(lb);
+  for(const role of ['yz','kai']){const b=document.createElement('span');b.className='chip';b.textContent=role==='yz'?'云':'楷';b.style.background=role==='kai'?'rgb(214,32,32)':chipColor(c,x.cid);
+   if(brush&&brush_k===k&&brush[0]===x.cid&&brush[1]===role)b.classList.add('sel');b.onclick=()=>setBrush([x.cid,role],k);g.appendChild(b)}
+  box.appendChild(g)});
+ document.getElementById('mnone').classList.toggle('on',brush===null)}
+function undo(){if(lastCol===null)return;const s=st[lastCol];if(s.ops.length){s.ops.pop();saved[COLS[lastCol].key]=s.ops;localStorage.setItem(LS,JSON.stringify(saved));replay(lastCol);stat();autosave();toast('已撤销一步',1000)}}
+function redraw(k){draw(k);if(modalK===k)drawModal()}
+
+async function build(){await loadServer();const main=document.getElementById('main');const regs={};
+ document.getElementById('savehint').innerHTML=SERVER?'修改<b>自动保存</b>（右上角显示保存时间），改完告诉我即可，不用导出。':'<b style="color:#b42020">当前是直接打开的文件，不能自动保存</b>：修改只存在浏览器里，改完请点“导出修正文件”。';
+ COLS.forEach((c,k)=>{if(!regs[c.reg]){const r=document.createElement('div');r.className='reg';r.innerHTML='<h3>第 '+c.reg+' 栏（从右往左读）</h3>';const row=document.createElement('div');row.className='row';r.appendChild(row);main.appendChild(r);regs[c.reg]=row}});
+ for(let k=COLS.length-1;k>=0;k--){const c=COLS[k];const card=document.createElement('div');card.className='card';
+  const left=document.createElement('div');left.className='lft';left.innerHTML='<div class="no">'+c.key.slice(3)+'</div>';const cv=document.createElement('canvas');cv.width=Math.round(c.W*SCALE);cv.height=Math.round(c.H*SCALE);left.appendChild(cv);
+  const labs=document.createElement('div');labs.className='labs';labs.style.height=cv.height+'px';labs.style.marginTop='16px';
+  card.appendChild(left);card.appendChild(labs);regs[c.reg].appendChild(card);
+  const P0=await decode(c),ctx=await decodeCtx(c);st[k]=Object.assign(initState(c,P0),{P0,ctx,cv,card,labs,lft:left,ops:saved[c.key]||[],hover:0});if(view.seen[c.key])card.classList.add('seen');
+  for(const op of st[k].ops)applyOp(k,op);renderLabels(k);draw(k);
+  cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();const y=(e.clientY-r.top)*(cv.height/r.height)/SCALE;setCur(k,cellAtY(c,y).cid,false);openModal(k,y)});
+ }
+ stat();
+ document.querySelectorAll('.row').forEach(r=>r.scrollLeft=r.scrollWidth);
+ drawCur(!!view.cur);if(SERVER&&!saveBlocked)setSave('自动保存已连接','ok');
+ if(location.hash==='#selftest')selftest();
+ const mm=location.hash.match(/^#modal=(\w+)(?:,(\d+))?(?:,(\w+))?/);if(mm){const k=COLS.findIndex(c=>c.key===mm[1]);const y=mm[2]?+mm[2]:undefined;openModal(k,y);if(mm[3]==='brush'){const cl=COLS[k].cells.find(cl=>Math.abs(cl.y-y)<60);if(cl)setBrush([cl.cid,'yz'],k)}if(mm[3]==='knife')setKnife(true)}}
+function selftest(){const k=0,c=COLS[k],s=st[k];const res={};
+ const n0=new Set(s.P).size;let maxId=0;for(const p of s.P)if(p>maxId)maxId=p;
+ const pids=Object.keys(s.owner).map(Number).filter(p=>s.owner[p]&&s.owner[p][1]==='yz');
+ let ys=[];for(let i=0;i<s.P.length;i++)if(s.P[i]===pids[0])ys.push(Math.floor(i/c.W));
+ const my=Math.round(ys.reduce((a,b)=>a+b)/ys.length);
+ res.cut_made=push(k,{t:'cut',x0:0,y0:my,x1:c.W-1,y1:my});res.cut_pieces=new Set(s.P).size-n0;
+ let tx=-1,ty=-1;for(let i=0;i<s.P.length;i++){if(s.P[i]>maxId){tx=i%c.W;ty=Math.floor(i/c.W);break}}
+ if(tx>=0){push(k,{t:'own',x:tx,y:ty,o:null});res.own_ok=s.owner[s.P[ty*c.W+tx]]===null}
+ push(k,{t:'label',cid:c.cells[0].cid,ch:'测'});res.label=s.labels[c.cells[0].cid];
+ res.ops=s.ops.length;
+ s.ops.pop();replay(k);res.after_undo_label=s.labels[c.cells[0].cid];res.after_undo_ops=s.ops.length;res.cuts_kept=s.cuts.length;
+ openModal(3,c.cells.length?COLS[3].cells[4].y:0);document.getElementById('mbody').scrollTop=Math.max(0,COLS[3].cells[4].y*MZ-document.getElementById('mbody').clientHeight/2);closeModal();
+ res.seen=Object.keys(view.seen);res.cur=view.cur;res.cur_expect_cid=COLS[3].cells[4].cid;res.cbox=document.querySelectorAll('.cbox').length;res.cur_cards=document.querySelectorAll('.card.cur').length;res.server=SERVER;
+ const div=document.createElement('pre');div.id='selftest';div.textContent=JSON.stringify(res);document.body.appendChild(div);
+ localStorage.removeItem(LS)}
+document.getElementById('showOrig').onclick=e=>{showOrig=!showOrig;e.target.classList.toggle('on',showOrig);for(const k in st)draw(k)};
+document.getElementById('nextFlag').onclick=nextFlag;
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='z'){undo();e.preventDefault()}});
+document.getElementById('reset').onclick=async()=>{if(!confirm('放弃本页全部修改？（已看标记保留）'))return;saved={};for(const k in st)st[k].ops=[];localStorage.removeItem(LS);if(SERVER){autosave();await new Promise(r=>setTimeout(r,1200))}location.reload()};
+document.getElementById('export').onclick=()=>{const out=exportData();
+ const n=Object.keys(out.columns).length;if(!n){alert('还没有任何修改');return}
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(out)],{type:'application/json'}));a.download='yunzhuan_p'+String(PG).padStart(2,'0')+'_edits.json';a.click()};
+const PAGES=__PAGES__;
+(function nav(){const box=document.getElementById('plinks');PAGES.forEach(p=>{const a=document.createElement('a');a.textContent=p;a.href='editor_p'+String(p).padStart(2,'0')+'.html';if(p===PG)a.className='cur';box.appendChild(a)});
+ const i=PAGES.indexOf(PG);const pv=document.getElementById('pprev'),nx=document.getElementById('pnext');
+ if(i>0)pv.href='editor_p'+String(PAGES[i-1]).padStart(2,'0')+'.html';else pv.className='off';
+ if(i<PAGES.length-1)nx.href='editor_p'+String(PAGES[i+1]).padStart(2,'0')+'.html';else nx.className='off';
+ document.addEventListener('keydown',e=>{if(!e.altKey||modalK!==null)return;if(e.key==='ArrowLeft'&&pv.href){location.href=pv.href;e.preventDefault()}if(e.key==='ArrowRight'&&nx.href){location.href=nx.href;e.preventDefault()}})})();
+initModal();
+build();
+</script></body></html>
